@@ -12,7 +12,6 @@ public class StageGeneration : MonoBehaviour {
     public GameObject roomObj;
     public GameObject Terrain;
     public GameObject enemy;
-    public GenerateRoom GeneratePatterns = new GenerateRoom();
     public Texture2D[] patterns;
     public ColorToPrefabs[] colorMappings;
     public enemy[] Bosses;

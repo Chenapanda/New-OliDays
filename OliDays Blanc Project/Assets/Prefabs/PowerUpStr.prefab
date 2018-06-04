@@ -139,3 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 849baa9edb609cd42bf83ac1d711d3f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonus: 2
+  pickupEffect: {fileID: 1933531132432148, guid: bf39e8e95722aca41af29864b0942ce7,
+    type: 2}
