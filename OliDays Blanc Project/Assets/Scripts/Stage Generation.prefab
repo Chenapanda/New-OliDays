@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1915732043361856}
+  m_IsPrefabParent: 1
+--- !u!1 &1915732043361856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4832303652695830}
+  - component: {fileID: 114945059109377358}
+  m_Layer: 0
+  m_Name: Stage Generation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4832303652695830
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1915732043361856}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114945059109377358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1915732043361856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a12570b4d6a4164cb779439814da2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomU: {fileID: 1977179404791206, guid: 519a9a952206d1644a59385dc77e051a, type: 2}
+  roomD: {fileID: 1882190374987344, guid: c3d76959d17004f4a8c693c49183c20d, type: 2}
+  roomL: {fileID: 1158203824735348, guid: 08805453469607d40be386937ca85887, type: 2}
+  roomR: {fileID: 1567033831873850, guid: 651968d23e797c7448c38fb38291f41e, type: 2}
+  roomUD: {fileID: 1988982353754056, guid: 1cfa7b33e5f7ffd41abbfa953e7742fb, type: 2}
+  roomLR: {fileID: 1167023169277028, guid: d1efdcdad056ba24b84cf7825d16dc09, type: 2}
+  roomUR: {fileID: 1725293665182470, guid: 03e0333b4a6398f4abf5b212cd1854e3, type: 2}
+  roomUL: {fileID: 1812241506698950, guid: 06cf1e994998c2145900c3a4e7d88c4e, type: 2}
+  roomDR: {fileID: 1800701251781672, guid: 643674aead399674bbe29d2a77a13aaa, type: 2}
+  roomDL: {fileID: 1973431098696890, guid: e128fc5e7072c024eb651f40221c93b3, type: 2}
+  roomUDL: {fileID: 1649221300324326, guid: d4d05d586a6ea02439baefa424dbf378, type: 2}
+  roomULR: {fileID: 1675890470227460, guid: 9454d60f49231ad488dcd4d4b228b33e, type: 2}
+  roomUDR: {fileID: 1243484168959050, guid: 9a4ad53ae070dcd419d9c0e52ddb3d95, type: 2}
+  roomDLR: {fileID: 1359244146110350, guid: 17df3db1e674df940bc974af6e64df0d, type: 2}
+  roomUDLR: {fileID: 1559605696968322, guid: bc25d83ca1277094aa4dd6663036163d, type: 2}
+  roomObj: {fileID: 0}
+  Terrain: {fileID: 1852366132018340, guid: 5189ad5ca5af7ba42b806fe53e0c76b5, type: 2}
+  enemy: {fileID: 1463301620885780, guid: 01daea2cbfe8ed049a5857074dff6e74, type: 2}
+  GeneratePatterns: {fileID: 0}
+  patterns:
+  - {fileID: 2800000, guid: c160fbee1517d0141be779f954fb46eb, type: 3}
+  - {fileID: 2800000, guid: 0596f42dfb3212a478f7a1c6b2347a4d, type: 3}
+  - {fileID: 2800000, guid: 363e5866c28e54a4882df1ca98a254d8, type: 3}
+  - {fileID: 2800000, guid: 31dfd6891fe23384f9246f59051bc41c, type: 3}
+  - {fileID: 2800000, guid: c62939aa7ffd5914a8e349b282f56389, type: 3}
+  - {fileID: 2800000, guid: dd8ec9c972e79ab4d9acd06195e90928, type: 3}
+  - {fileID: 2800000, guid: 2f83472cf6932b14f88f06fc05fc16e1, type: 3}
+  - {fileID: 2800000, guid: 4c183239bb1cdf941ba733506b4f96ce, type: 3}
+  - {fileID: 2800000, guid: a4a463d44f3b7bb479b244e3dfd1be7c, type: 3}
+  colorMappings:
+  - color: {r: 0, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1852366132018340, guid: 5189ad5ca5af7ba42b806fe53e0c76b5, type: 2}
+  - color: {r: 1, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1463301620885780, guid: 01daea2cbfe8ed049a5857074dff6e74, type: 2}
+  - color: {r: 0, g: 0, b: 1, a: 1}
+    prefab: {fileID: 1740782984362876, guid: 9f63c97e6e69c174dbf228703d9ee59b, type: 2}
+  Bosses:
+  - {fileID: 114052516665274604, guid: 19d889b760f940a448f7bfa1c3c752dc, type: 2}
