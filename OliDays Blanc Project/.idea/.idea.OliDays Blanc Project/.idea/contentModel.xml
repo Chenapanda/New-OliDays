@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="GenerateRoom.cs" t="Include" />
         <e p="MainMenu.cs" t="Include" />
+        <e p="OptionsMenu.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">

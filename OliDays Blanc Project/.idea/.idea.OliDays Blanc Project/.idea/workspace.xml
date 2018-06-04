@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="977">
@@ -36,16 +36,44 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="OptionsMenu.cs" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Menu/Assets/Menu/OptionsMenu.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionsMenu.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/OptionsMenu.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+              <folding>
+                <marker date="1528129027892" expanded="true" signature="6:125" ph="..." />
+                <marker date="1528129027892" expanded="true" signature="167:442" ph="{...}" />
+                <marker date="1528129027892" expanded="true" signature="306:354" ph="{...}" />
+                <marker date="1528129027892" expanded="true" signature="398:440" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/OptionsMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/Menu/Assets/Menu/OptionsMenu.cs" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/StageGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/OptionsMenu.cs" />
       </list>
     </option>
   </component>
@@ -129,12 +157,12 @@
       <workItem from="1524598551138" duration="4000" />
       <workItem from="1524598656389" duration="2000" />
       <workItem from="1528119628052" duration="196000" />
-      <workItem from="1528123192302" duration="814000" />
+      <workItem from="1528123192302" duration="917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1284000" />
+    <option name="totallyTimeSpent" value="1387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,6 +259,27 @@
             <marker date="1528123518334" expanded="true" signature="1010:1144" ph="{...}" />
             <marker date="1528123518334" expanded="true" signature="1175:1309" ph="{...}" />
             <marker date="1528123518334" expanded="true" signature="1340:1684" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Menu/Assets/Menu/OptionsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OptionsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <marker date="1528129027892" expanded="true" signature="6:125" ph="..." />
+            <marker date="1528129027892" expanded="true" signature="167:442" ph="{...}" />
+            <marker date="1528129027892" expanded="true" signature="306:354" ph="{...}" />
+            <marker date="1528129027892" expanded="true" signature="398:440" ph="{...}" />
           </folding>
         </state>
       </provider>
