@@ -641,9 +641,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 173901900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c13c1cf8a8016aa429cb25055979f0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a01ed45f2ae804489b846dc6c41dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeMixer: {fileID: 0}
+  resolutionsDropdown: {fileID: 0}
 --- !u!1 &237248385
 GameObject:
   m_ObjectHideFlags: 0
@@ -5406,8 +5408,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -245}
-  m_SizeDelta: {x: 99.400024, y: 30}
+  m_AnchoredPosition: {x: -207.7, y: -184.3}
+  m_SizeDelta: {x: 99.4, y: 36.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049046535
 MonoBehaviour:
@@ -6230,7 +6232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -110.6, y: 33.7}
+  m_AnchoredPosition: {x: -0.5, y: -0.2}
   m_SizeDelta: {x: -12.57, y: -5.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240366140
@@ -6298,7 +6300,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -6318,7 +6320,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.015578839, y: -0.59316295, z: 0.14455111, w: 0.1603842}
+  m_margin: {x: -1.1113896, y: -1.4150282, z: -1.4991652, w: -0.3875215}
   m_textInfo:
     textComponent: {fileID: 1240366140}
     characterCount: 6
@@ -7020,7 +7022,18 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 173901902}
+        m_MethodName: Volume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1507157875
@@ -11843,7 +11856,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 173901902}
+        m_MethodName: FullScreen
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
