@@ -18,6 +18,7 @@
             </e>
           </e>
         </e>
+        <e p="PowerUp.cs" t="Include" />
         <e p="ProCore" t="Include">
           <e p="ProBuilder" t="Include">
             <e p="About" t="Include">

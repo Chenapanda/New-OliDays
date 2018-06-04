@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
-public class MainMenu : MonoBehaviour {
+using UnityEngine.UI;
 
+public class MainMenu : MonoBehaviour {
+	
 	public void Jouer()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
