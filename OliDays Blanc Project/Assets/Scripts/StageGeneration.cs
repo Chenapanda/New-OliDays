@@ -15,6 +15,8 @@ public class StageGeneration : MonoBehaviour {
     public GenerateRoom GeneratePatterns = new GenerateRoom();
     public Texture2D[] patterns;
     public ColorToPrefabs[] colorMappings;
+    public enemy[] Bosses;
+    private bool over = false;
     // Use this for initialization
     void Start()
 {
@@ -341,15 +343,30 @@ public class StageGeneration : MonoBehaviour {
     {
         float x = room.gridPos[0];
         float y = room.gridPos[1];
-        Texture2D thisroom = patterns[Random.Range(0, patterns.Length)];
-        int length = thisroom.width;
-        for (int i = 0; i < length; i++)
+        if (!over)
         {
-            for (int j = 0; j < length; j++)
+            bool canbebossroom = room.openBot && !room.openLeft && !room.openRight && !room.openTop || !room.openBot && room.openLeft && !room.openRight && !room.openTop || !room.openBot && !room.openLeft && room.openRight && !room.openTop || !room.openBot && !room.openLeft && !room.openRight && room.openTop;
+            if (canbebossroom)
             {
-                GenerateTile(i, j, thisroom, room);
+                over = true;
+                Vector3 position = new Vector3(room.gridPos.y * 9, 0, room.gridPos.x * 9);
+                enemy Boss = Bosses[Random.Range(0, Bosses.Length)];
+                Instantiate(Boss, position, Quaternion.identity, transform);
             }
         }
+        else
+        {
+            Texture2D thisroom = patterns[Random.Range(0, patterns.Length)];
+            int length = thisroom.width;
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = 0; j < length; j++)
+                {
+                    GenerateTile(i, j, thisroom, room);
+                }
+            }
+        }
+
     }
     public void GenerateTile(int i, int j, Texture2D thisroom, Room room)
     {
