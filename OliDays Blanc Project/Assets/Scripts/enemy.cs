@@ -7,6 +7,7 @@ public class enemy : MonoBehaviour {
     public GameObject dreamA;
     public GameObject me;
     public Rigidbody self;
+    public int type; //type0 =enemy normal type1 = boss
     private float health = 10;
     private int loot = 50;
     public float Health
@@ -35,10 +36,18 @@ public class enemy : MonoBehaviour {
         Health -= dmg;
         if (Health <= 0)
         {
-            if (Random.Range(0, 100) < loot)
+            if (type == 0)
+            {
+                if (Random.Range(0, 100) < loot)
+                {
+                    Instantiate(dream, transform.position, new Quaternion(0, 0, 0, 0));
+                    Instantiate(dreamA, transform.position + new Vector3(0, .5f, 0), dreamA.transform.rotation);
+                }
+            }
+            else
             {
                 Instantiate(dream, transform.position, new Quaternion(0, 0, 0, 0));
-                Instantiate(dreamA, transform.position + new Vector3 (0, .5f, 0), dreamA.transform.rotation);
+                Instantiate(dreamA, transform.position + new Vector3(0, .5f, 0), dreamA.transform.rotation);
             }
             Destroy(gameObject);
         }
