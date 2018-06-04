@@ -69,8 +69,5 @@ public class PlayerMovement : MonoBehaviour {
         Rect posDammage2 = new Rect(70, 60, 70, 70);
         GUI.Label(posDammage2, dammage.ToString());
     }
-    //test Hugo
-    //TestGithub
-    //testRémy
 
 }
