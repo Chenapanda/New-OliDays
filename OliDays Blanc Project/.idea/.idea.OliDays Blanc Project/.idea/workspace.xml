@@ -33,8 +33,8 @@
       <file leaf-file-name="MainMenu.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+            <state relative-caret-position="336">
+              <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <marker date="1528191768138" expanded="false" signature="6:160" ph="..." />
                 <marker date="1528191768138" expanded="true" signature="200:367" ph="{...}" />
@@ -45,11 +45,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PauseMenu.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainMenuAnglais.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/MainMenuAnglais.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <folding>
+                <marker date="1528198685807" expanded="true" signature="6:160" ph="..." />
+                <marker date="1528198685807" expanded="true" signature="207:381" ph="{...}" />
+                <marker date="1528198685807" expanded="true" signature="233:302" ph="{...}" />
+                <marker date="1528198685807" expanded="true" signature="326:378" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PauseMenu.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/PauseMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="84">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <marker date="1528197627861" expanded="true" signature="6:113" ph="..." />
                 <marker date="1528197627861" expanded="true" signature="153:764" ph="{...}" />
@@ -61,6 +76,27 @@
                 <marker date="1528197627861" expanded="true" signature="538:621" ph="{...}" />
                 <marker date="1528197627861" expanded="true" signature="646:709" ph="{...}" />
                 <marker date="1528197627861" expanded="true" signature="734:762" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PauseMenuAnglais.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/PauseMenuAnglais.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <folding>
+                <marker date="1528198218810" expanded="true" signature="6:113" ph="..." />
+                <marker date="1528198218810" expanded="true" signature="160:799" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="300:429" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="341:426" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="366:390" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="399:422" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="452:544" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="559:649" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="674:744" ph="{...}" />
+                <marker date="1528198218810" expanded="true" signature="769:797" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -82,6 +118,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OptionsMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PauseMenuAnglais.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainMenuAnglais.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Menu/Assets/Menu/MainMenu.cs" root0="SKIP_INSPECTION" />
@@ -100,6 +138,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/OptionsMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/PauseMenuAnglais.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenuAnglais.cs" />
       </list>
     </option>
   </component>
@@ -184,12 +224,12 @@
       <workItem from="1524598656389" duration="2000" />
       <workItem from="1528119628052" duration="196000" />
       <workItem from="1528123192302" duration="5346000" />
-      <workItem from="1528187523708" duration="4508000" />
+      <workItem from="1528187523708" duration="5892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10324000" />
+    <option name="totallyTimeSpent" value="11708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -349,23 +389,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-          <folding>
-            <marker date="1528191768138" expanded="false" signature="6:160" ph="..." />
-            <marker date="1528191768138" expanded="true" signature="200:367" ph="{...}" />
-            <marker date="1528191768138" expanded="true" signature="226:288" ph="{...}" />
-            <marker date="1528191768138" expanded="true" signature="312:364" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/PauseMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <marker date="1528197627861" expanded="true" signature="6:113" ph="..." />
             <marker date="1528197627861" expanded="true" signature="153:764" ph="{...}" />
@@ -377,6 +404,51 @@
             <marker date="1528197627861" expanded="true" signature="538:621" ph="{...}" />
             <marker date="1528197627861" expanded="true" signature="646:709" ph="{...}" />
             <marker date="1528197627861" expanded="true" signature="734:762" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <marker date="1528191768138" expanded="false" signature="6:160" ph="..." />
+            <marker date="1528191768138" expanded="true" signature="200:367" ph="{...}" />
+            <marker date="1528191768138" expanded="true" signature="226:288" ph="{...}" />
+            <marker date="1528191768138" expanded="true" signature="312:364" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MainMenuAnglais.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <marker date="1528198685807" expanded="true" signature="6:160" ph="..." />
+            <marker date="1528198685807" expanded="true" signature="207:381" ph="{...}" />
+            <marker date="1528198685807" expanded="true" signature="233:302" ph="{...}" />
+            <marker date="1528198685807" expanded="true" signature="326:378" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/PauseMenuAnglais.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <marker date="1528198218810" expanded="true" signature="6:113" ph="..." />
+            <marker date="1528198218810" expanded="true" signature="160:799" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="300:429" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="341:426" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="366:390" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="399:422" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="452:544" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="559:649" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="674:744" ph="{...}" />
+            <marker date="1528198218810" expanded="true" signature="769:797" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -4611,10 +4611,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 885997155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eefac362d3f39143ae4e340222a709c, type: 3}
+  m_Script: {fileID: 11500000, guid: fb73f5887cc2f794aab35b2c58bec633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenuUi: {fileID: 1801965255}
+  PauseMenuAnglaisUi: {fileID: 1801965255}
 --- !u!1 &909869384
 GameObject:
   m_ObjectHideFlags: 0
