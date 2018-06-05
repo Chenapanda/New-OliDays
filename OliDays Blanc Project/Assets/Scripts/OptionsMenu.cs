@@ -7,14 +7,13 @@ using System.IO;
 
 public class OptionsMenu : MonoBehaviour
 {
-
-	
 	public Dropdown textureQualityDropdown;
 	public Slider musicVolumeSlider;
 	
 	
 	public GameSettings gameSettings;
 	public AudioSource musicSource;
+	//public AudioMixer volumeMixer;
 
 	public void FullScreen(bool isFullScreen)
 	{
@@ -32,11 +31,20 @@ public class OptionsMenu : MonoBehaviour
 	public void OnMusicVolumeChange()
 	{
 		musicSource.volume = gameSettings.musicVolume = musicVolumeSlider.value;
+		if (musicVolumeSlider.value == 0)
+		{
+			musicSource.volume = 0;
+		}
 	}
 	
 	public void OnTexttureQualityChange()
 	{
 		QualitySettings.masterTextureLimit = gameSettings.textureQuality = textureQualityDropdown.value;
 	}
+	
+	/*public void Volume(float volume)
+	{
+		volumeMixer.SetFloat("volume", volume);
+	}*/
 
 }
