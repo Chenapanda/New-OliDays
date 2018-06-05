@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="12" column="61" lean-forward="true" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+              <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
               <folding>
                 <marker date="1528191768138" expanded="false" signature="6:160" ph="..." />
                 <marker date="1528191768138" expanded="true" signature="200:367" ph="{...}" />
@@ -161,12 +161,12 @@
       <workItem from="1524598656389" duration="2000" />
       <workItem from="1528119628052" duration="196000" />
       <workItem from="1528123192302" duration="5346000" />
-      <workItem from="1528187523708" duration="2473000" />
+      <workItem from="1528187523708" duration="3070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8289000" />
+    <option name="totallyTimeSpent" value="8886000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,7 +329,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="12" column="61" lean-forward="true" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
           <folding>
             <marker date="1528191768138" expanded="false" signature="6:160" ph="..." />
             <marker date="1528191768138" expanded="true" signature="200:367" ph="{...}" />
