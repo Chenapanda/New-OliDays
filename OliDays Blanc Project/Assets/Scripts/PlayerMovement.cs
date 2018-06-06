@@ -8,7 +8,19 @@ public class PlayerMovement : MonoBehaviour {
     public Rigidbody player;
     public int speed;
     public Texture2D Staff;
-
+    public Texture2D Hp;
+    private float health = 3f;
+    public float Health
+    {
+        get
+        {
+            return health;
+        }
+        set
+        {
+            health = value;
+        }
+    }
     private float dammage = 5f;
     public float Dammage
     {
@@ -21,6 +33,7 @@ public class PlayerMovement : MonoBehaviour {
             dammage = value;
         }
     }
+
 
     private int dreams = 0;
     public int Dreams
@@ -61,12 +74,19 @@ public class PlayerMovement : MonoBehaviour {
     }
     private void OnGUI()
     {
+        //displays dreams
         GUI.contentColor = Color.magenta;
         GUI.Label(new Rect(20, 20, 100, 20), "Dreams : " + Dreams);
         //displays dammage
-        Rect posDammage = new Rect(20, 50, 40, 40);
+        Rect posDammage = new Rect(20, 90, 40, 40);
         GUI.Label(posDammage, Staff);
-        Rect posDammage2 = new Rect(70, 60, 70, 70);
+        Rect posDammage2 = new Rect(70, 100, 70, 70);
         GUI.Label(posDammage2, dammage.ToString());
+        for (int i = 0; i < Health; i++)
+        {
+            Rect posHealth = new Rect(20 + 20 * i, 50, 40, 40);
+            GUI.Label(posHealth, Hp);
+        }
+
     }
 }
