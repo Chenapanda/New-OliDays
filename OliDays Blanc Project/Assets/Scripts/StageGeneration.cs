@@ -13,9 +13,11 @@ public class StageGeneration : MonoBehaviour {
     public GameObject Terrain;
     public GameObject enemy;
     public Texture2D[] patterns;
+    public Texture2D[] poweruprooms;
     public ColorToPrefabs[] colorMappings;
     public enemy[] Bosses;
-    private bool over = false;
+    private bool boss = false;
+    private bool powerup = false;
     // Use this for initialization
     void Start()
 {
@@ -323,7 +325,8 @@ public class StageGeneration : MonoBehaviour {
     
     void DrawMap()
         {
-            foreach (Room room in rooms)
+        int powerUpRoomInd = Random.Range(5, 15);
+        foreach (Room room in rooms)
             {
                 if (room == null)
                 {
@@ -334,20 +337,21 @@ public class StageGeneration : MonoBehaviour {
             drawPos.x *= 9;
             drawPos.z *= 9;
             Object.Instantiate(roomObj, drawPos, Quaternion.identity);
-            GenerateRooms(room);
+            powerUpRoomInd -= 1;
+            GenerateRooms(room, powerUpRoomInd);
             }
         }
 
-    public void GenerateRooms(Room room)
+    public void GenerateRooms(Room room, int ind)
     {
         float x = room.gridPos[0];
         float y = room.gridPos[1];
-        if (!over)
+        if (!boss)
         {
             bool canbebossroom = room.openBot && !room.openLeft && !room.openRight && !room.openTop || !room.openBot && room.openLeft && !room.openRight && !room.openTop || !room.openBot && !room.openLeft && room.openRight && !room.openTop || !room.openBot && !room.openLeft && !room.openRight && room.openTop;
             if (canbebossroom)
             {
-                over = true;
+                boss = true;
                 Vector3 position = new Vector3(room.gridPos.y * 9, 0, room.gridPos.x * 9);
                 enemy Boss = Bosses[Random.Range(0, Bosses.Length)];
                 Instantiate(Boss, position, Quaternion.identity, transform);
@@ -355,15 +359,33 @@ public class StageGeneration : MonoBehaviour {
         }
         else
         {
-            Texture2D thisroom = patterns[Random.Range(0, patterns.Length)];
-            int length = thisroom.width;
-            for (int i = 0; i < length; i++)
+            if (ind <= 0 && !powerup)
             {
-                for (int j = 0; j < length; j++)
+                powerup = true;
+                Texture2D thisroom = poweruprooms[Random.Range(0, poweruprooms.Length)];
+                int length = thisroom.width;
+                for (int i = 0; i < length; i++)
                 {
-                    GenerateTile(i, j, thisroom, room);
+                    for (int j = 0; j < length; j++)
+                    {
+                        GenerateTile(i, j, thisroom, room);
+                    }
                 }
             }
+            else
+            {
+                Texture2D thisroom = patterns[Random.Range(0, patterns.Length)];
+                int length = thisroom.width;
+                for (int i = 0; i < length; i++)
+                {
+                    for (int j = 0; j < length; j++)
+                    {
+                        GenerateTile(i, j, thisroom, room);
+                    }
+                }
+
+            }
+
         }
 
     }
