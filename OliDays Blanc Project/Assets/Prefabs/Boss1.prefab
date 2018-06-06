@@ -129,5 +129,3 @@ MonoBehaviour:
   me: {fileID: 0}
   self: {fileID: 54021551804717130}
   type: 1
-  health: 75
-  loot: 100
