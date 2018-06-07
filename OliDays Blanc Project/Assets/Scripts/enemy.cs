@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
+<<<<<<< HEAD
 public class enemy : MonoBehaviour 
 {
 
@@ -14,9 +15,12 @@ public class enemy : MonoBehaviour
 
 
     public LayerMask aggroLayerMask;
+=======
+public class enemy : MonoBehaviour {
+    public GameObject textPrefab;
+>>>>>>> 05fdf9a4540fd00f69249a2ce69a4747ba36956f
     public GameObject dream;
     public GameObject dreamA;
-    public GameObject me;
     public Rigidbody self;
     public int type; //type0 =enemy normal type1 = boss
     public float health;
@@ -51,6 +55,7 @@ public class enemy : MonoBehaviour
     public void ishit(float dmg)
     {
         Health -= dmg;
+        ShowFloatingText();
         if (Health <= 0)
         {
             if (Random.Range(0, 100) < loot)
@@ -61,6 +66,7 @@ public class enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+<<<<<<< HEAD
 
 	public void PerformAttack()
 	{
@@ -80,4 +86,11 @@ public class enemy : MonoBehaviour
 		navAgent.SetDestination(player.transform.position);
 	}
 	
+=======
+    public void ShowFloatingText()
+    {
+        var go = Instantiate(textPrefab, transform.position, textPrefab.transform.rotation, transform);
+        go.GetComponent<TextMesh>().text = health.ToString();
+    }
+>>>>>>> 05fdf9a4540fd00f69249a2ce69a4747ba36956f
 }

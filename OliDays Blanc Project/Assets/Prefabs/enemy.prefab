@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ff0dc86f4680948bb18598da021680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textPrefab: {fileID: 1771234409125918, guid: 7b0995d64dbf9b7408d925207968420c, type: 2}
   dream: {fileID: 1740782984362876, guid: 9f63c97e6e69c174dbf228703d9ee59b, type: 2}
   dreamA: {fileID: 1933531132432148, guid: bf39e8e95722aca41af29864b0942ce7, type: 2}
-  me: {fileID: 0}
   self: {fileID: 54863582589066978}
   type: 0
   health: 15
