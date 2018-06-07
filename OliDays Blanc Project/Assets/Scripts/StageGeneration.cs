@@ -325,7 +325,7 @@ public class StageGeneration : MonoBehaviour {
     
     void DrawMap()
         {
-        int powerUpRoomInd = Random.Range(5, 15);
+        int powerUpRoomInd = 8;
         foreach (Room room in rooms)
             {
                 if (room == null)
