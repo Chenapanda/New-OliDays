@@ -7,10 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="FrenchToEnglish.cs" t="Include" />
-        <e p="LanguageChange.cs" t="Include" />
-        <e p="PauseMenu.cs" t="Include" />
-        <e p="PauseMenuAnglais.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -150,13 +146,17 @@
           <e p="ColorToPrefab.cs" t="Include" />
           <e p="Dreams.cs" t="Include" />
           <e p="enemy.cs" t="Include" />
+          <e p="FrenchToEnglish.cs" t="Include" />
           <e p="GameSettings.cs" t="Include" />
           <e p="GenerateRoom.cs" t="Include" />
           <e p="IAmovement.cs" t="Include" />
+          <e p="LanguageChange.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="MainMenuAnglais.cs" t="Include" />
           <e p="NavMeshscript.cs" t="Include" />
           <e p="OptionsMenu.cs" t="Include" />
+          <e p="PauseMenu.cs" t="Include" />
+          <e p="PauseMenuAnglais.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PowerUp.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />

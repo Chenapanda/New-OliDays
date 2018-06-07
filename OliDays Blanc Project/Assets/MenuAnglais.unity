@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 80034003}
   - component: {fileID: 80034002}
   m_Layer: 0
-  m_Name: Solo
+  m_Name: Txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 394878208}
   - component: {fileID: 394878207}
   m_Layer: 0
-  m_Name: Coop
+  m_Name: Txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

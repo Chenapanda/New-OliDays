@@ -13,4 +13,5 @@ public class Room
         this.gridPos = gridPos;
         this.type = type;
     }
+    
 }
