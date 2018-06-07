@@ -41,11 +41,17 @@ public class enemy : MonoBehaviour {
 	}
 
 	void Update(){
-		if (Vector3.Distance(playertransform.position, this.transform.position) < 10)
+		if (Vector3.Distance(playertransform.position, this.transform.position) < 2)
 		{
 			Vector3 direction = playertransform.position - this.transform.position;
+			direction.y = 0;
 
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1f);
+
+			if (direction.magnitude > 0.75f)
+			{
+				this.transform.Translate(0,0,0.05f);
+			}
 		}
 	}
 	
