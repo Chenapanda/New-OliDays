@@ -9,7 +9,8 @@ using Random = UnityEngine.Random;
 public class enemy : MonoBehaviour {   
 	private NavMeshAgent navAgent;
     private Collider[] withinAggroColliders;
-    private Player player;
+    private PlayerMovement player;
+	public Transform playertransform;
                                     
                                     
     public LayerMask aggroLayerMask;
@@ -34,21 +35,21 @@ public class enemy : MonoBehaviour {
         }
     }
 
-	// Use this for initialization
-	void Start ()
+	private void Start()
 	{
-	    navAgent = GetComponent<NavMeshAgent>();
+		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
+	}
+
+	void Update(){
+		if (Vector3.Distance(playertransform.position, this.transform.position) < 10)
+		{
+			Vector3 direction = playertransform.position - this.transform.position;
+
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+		}
 	}
 	
-	// Update is called once per frame
-	void Update ()
-	{
-	    withinAggroColliders = Physics.OverlapSphere(transform.position, 2f, aggroLayerMask);
-	    if (withinAggroColliders.Length > 0)
-	    {
-	        ChasePlayer(withinAggroColliders[0].GetComponent<Player>());
-	    }
-	}
+	
     public void ishit(float dmg)
     {
         Health -= dmg;
@@ -65,7 +66,7 @@ public class enemy : MonoBehaviour {
     }
 
 
-	public void PerformAttack()
+	/*public void PerformAttack()
 	{
 		player.TakeDamage(1);
 	}
@@ -77,11 +78,12 @@ public class enemy : MonoBehaviour {
 			Destroy(gameObject);
 	}
 
-	void ChasePlayer(Player player)
+	void ChasePlayer(PlayerMovement player)
 	{
 		this.player = player;
 		navAgent.SetDestination(player.transform.position);
-	}
+
+	}*/
 
     public void ShowFloatingText()
     {

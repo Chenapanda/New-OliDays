@@ -146,6 +146,7 @@
           <e p="ColorToPrefab.cs" t="Include" />
           <e p="Dreams.cs" t="Include" />
           <e p="enemy.cs" t="Include" />
+          <e p="FloatingText.cs" t="Include" />
           <e p="FrenchToEnglish.cs" t="Include" />
           <e p="GameSettings.cs" t="Include" />
           <e p="GenerateRoom.cs" t="Include" />

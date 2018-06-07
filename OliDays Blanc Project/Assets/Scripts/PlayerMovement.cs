@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
     public GameObject self;
     public Rigidbody player;
@@ -87,6 +88,19 @@ public class PlayerMovement : MonoBehaviour {
         GUI.Label(posDammage, Staff);
         Rect posDammage2 = new Rect(70, 100, 70, 70);
         GUI.Label(posDammage2, dammage.ToString());
+    }
+    
+    public void TakeDamage(int amount)
+    {
+        Health -= amount;
+        if (Health <= 0)
+            Die();
+    }
+    
+    private void Die()
+    {
+        Debug.Log("Player dead. Reset health.");
+        this.Health = 3f;
     }
 
 }
