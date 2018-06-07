@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class enemy : MonoBehaviour {
+    public GameObject textPrefab;
     public GameObject dream;
     public GameObject dreamA;
-    public GameObject me;
     public Rigidbody self;
     public int type; //type0 =enemy normal type1 = boss
     public float health;
@@ -34,6 +34,7 @@ public class enemy : MonoBehaviour {
     public void ishit(float dmg)
     {
         Health -= dmg;
+        ShowFloatingText();
         if (Health <= 0)
         {
             if (Random.Range(0, 100) < loot)
@@ -43,5 +44,10 @@ public class enemy : MonoBehaviour {
             }
             Destroy(gameObject);
         }
+    }
+    public void ShowFloatingText()
+    {
+        var go = Instantiate(textPrefab, transform.position, textPrefab.transform.rotation, transform);
+        go.GetComponent<TextMesh>().text = health.ToString();
     }
 }
