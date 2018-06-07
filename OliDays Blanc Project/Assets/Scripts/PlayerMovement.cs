@@ -74,6 +74,11 @@ public class PlayerMovement : MonoBehaviour {
     }
     private void OnGUI()
     {
+        for (int i = 0; i < Health; i++)
+        {
+            Rect posHealth = new Rect(20 + 20 * i, 50, 40, 40);
+            GUI.Label(posHealth, Hp);
+        }
         //displays dreams
         GUI.contentColor = Color.magenta;
         GUI.Label(new Rect(20, 20, 100, 20), "Dreams : " + Dreams);
@@ -82,11 +87,6 @@ public class PlayerMovement : MonoBehaviour {
         GUI.Label(posDammage, Staff);
         Rect posDammage2 = new Rect(70, 100, 70, 70);
         GUI.Label(posDammage2, dammage.ToString());
-        for (int i = 0; i < Health; i++)
-        {
-            Rect posHealth = new Rect(20 + 20 * i, 50, 40, 40);
-            GUI.Label(posHealth, Hp);
-        }
-
     }
+
 }
