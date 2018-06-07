@@ -46,11 +46,12 @@ public class enemy : MonoBehaviour {
 			Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
 
+			
 			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1f);
 
 			if (direction.magnitude > 0.75f)
 			{
-				this.transform.Translate(0,0,0.05f);
+				this.transform.Translate(0,0,0.04f);
 			}
 		}
 	}
