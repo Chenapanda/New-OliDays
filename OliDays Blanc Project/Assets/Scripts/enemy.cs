@@ -12,7 +12,7 @@ public class enemy : MonoBehaviour {
     public int range = 4;
     private PlayerMovement player;
 	public Transform playertransform;
-    public float speed = 0.004f;
+    public float speed = 0.04f;
     public LayerMask aggroLayerMask;
     public GameObject textPrefab;
     public GameObject dream;
