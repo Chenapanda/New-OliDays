@@ -5,20 +5,17 @@ using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
-<<<<<<< HEAD
-public class enemy : MonoBehaviour 
-{
 
-    private NavMeshAgent navAgent;
+public class enemy : MonoBehaviour {   
+	private NavMeshAgent navAgent;
     private Collider[] withinAggroColliders;
-	private Player player;
-
-
+    private Player player;
+                                    
+                                    
     public LayerMask aggroLayerMask;
-=======
-public class enemy : MonoBehaviour {
+
     public GameObject textPrefab;
->>>>>>> 05fdf9a4540fd00f69249a2ce69a4747ba36956f
+
     public GameObject dream;
     public GameObject dreamA;
     public Rigidbody self;
@@ -66,7 +63,7 @@ public class enemy : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-<<<<<<< HEAD
+
 
 	public void PerformAttack()
 	{
@@ -85,12 +82,11 @@ public class enemy : MonoBehaviour {
 		this.player = player;
 		navAgent.SetDestination(player.transform.position);
 	}
-	
-=======
+
     public void ShowFloatingText()
     {
         var go = Instantiate(textPrefab, transform.position, textPrefab.transform.rotation, transform);
         go.GetComponent<TextMesh>().text = health.ToString();
     }
->>>>>>> 05fdf9a4540fd00f69249a2ce69a4747ba36956f
+
 }
