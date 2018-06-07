@@ -9,6 +9,7 @@ using Random = UnityEngine.Random;
 public class enemy : MonoBehaviour {   
 	private NavMeshAgent navAgent;
     private Collider[] withinAggroColliders;
+    public int range = 4;
     private PlayerMovement player;
 	public Transform playertransform;
     public float speed = 0.004f;
@@ -38,13 +39,13 @@ public class enemy : MonoBehaviour {
 	}
 
 	void Update(){
-		if (Vector3.Distance(playertransform.position, this.transform.position) < 2)
+		if (Vector3.Distance(playertransform.position, this.transform.position) < range)
 		{
 			Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
 
 			
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1f);
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1);
 
 			if (direction.magnitude > 0.75f)
 			{
