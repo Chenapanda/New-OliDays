@@ -1,8 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
-public class enemy : MonoBehaviour {
+public class enemy : MonoBehaviour 
+{
+
+    private NavMeshAgent navAgent;
+    private Collider[] withinAggroColliders;
+	private Player player;
+
+
+    public LayerMask aggroLayerMask;
     public GameObject dream;
     public GameObject dreamA;
     public GameObject me;
@@ -23,13 +34,19 @@ public class enemy : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+	    navAgent = GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+	    withinAggroColliders = Physics.OverlapSphere(transform.position, 2f, aggroLayerMask);
+	    if (withinAggroColliders.Length > 0)
+	    {
+	        ChasePlayer(withinAggroColliders[0].GetComponent<Player>());
+	    }
 	}
     public void ishit(float dmg)
     {
@@ -44,4 +61,23 @@ public class enemy : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+	public void PerformAttack()
+	{
+		player.TakeDamage(1);
+	}
+
+	public void TakeDamage(int amount)
+	{
+		Health -= amount;
+		if (Health <= 0)
+			Destroy(gameObject);
+	}
+
+	void ChasePlayer(Player player)
+	{
+		this.player = player;
+		navAgent.SetDestination(player.transform.position);
+	}
+	
 }
