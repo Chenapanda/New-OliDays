@@ -403,12 +403,16 @@ public class StageGeneration : MonoBehaviour {
                 {
                     if (colorMapping.color == Color.red)
                     {
-                        enemy enemy = new enemy(room);
+                        enemy.GetComponent<enemy>().roomPos = room.gridPos;
                         Vector3 thisposition = new Vector3(room.gridPos.y * 9 - 3.5f + i, 0, room.gridPos.x * 9 - 3.5f + j);
                         Instantiate(enemy, thisposition, Quaternion.identity, transform);
                     }
-                    Vector3 position = new Vector3(room.gridPos.y * 9 - 3.5f + i, 0, room.gridPos.x * 9 - 3.5f + j);
-                    Instantiate(colorMapping.prefab, position, Quaternion.identity, transform);
+                    else
+                    {
+                        Vector3 position = new Vector3(room.gridPos.y * 9 - 3.5f + i, 0, room.gridPos.x * 9 - 3.5f + j);
+                        Instantiate(colorMapping.prefab, position, Quaternion.identity, transform);
+                    }
+
                 }
             }
         }

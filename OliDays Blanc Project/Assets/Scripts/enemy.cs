@@ -10,8 +10,8 @@ public class enemy : MonoBehaviour {
 	private NavMeshAgent navAgent;
     private Collider[] withinAggroColliders;
     private PlayerMovement player;
-    private Room room;
 
+    public Vector2 roomPos;
     public int range = 4;
     public Transform playertransform;
     public float speed = 0.04f;
@@ -34,10 +34,7 @@ public class enemy : MonoBehaviour {
             health = value;
         }
     }
-    public enemy(Room thisroom)
-    {
-        room = thisroom;
-    }
+
     private void Start()
 	{
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -62,6 +59,7 @@ public class enemy : MonoBehaviour {
 	
     public void ishit(float dmg)
     {
+        print(roomPos);
         Health -= dmg;
         ShowFloatingText();
         if (Health <= 0)
