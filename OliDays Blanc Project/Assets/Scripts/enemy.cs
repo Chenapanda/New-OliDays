@@ -9,9 +9,11 @@ using Random = UnityEngine.Random;
 public class enemy : MonoBehaviour {   
 	private NavMeshAgent navAgent;
     private Collider[] withinAggroColliders;
-    public int range = 4;
     private PlayerMovement player;
-	public Transform playertransform;
+    private Room room;
+
+    public int range = 4;
+    public Transform playertransform;
     public float speed = 0.04f;
     public LayerMask aggroLayerMask;
     public GameObject textPrefab;
@@ -32,8 +34,11 @@ public class enemy : MonoBehaviour {
             health = value;
         }
     }
-
-	private void Start()
+    public enemy(Room thisroom)
+    {
+        room = thisroom;
+    }
+    private void Start()
 	{
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
 	}
