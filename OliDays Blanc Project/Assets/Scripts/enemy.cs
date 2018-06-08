@@ -41,7 +41,7 @@ public class enemy : MonoBehaviour {
 	}
 
 	void Update(){
-        bool shouldchase = ((roomPos.x < playertransform.position.x) && (playertransform.position.x < roomPos.x + 7)) && ((roomPos.z < playertransform.position.z) && (playertransform.position.z < roomPos.z + 7));
+        bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
 
         if (shouldchase)
 		{
