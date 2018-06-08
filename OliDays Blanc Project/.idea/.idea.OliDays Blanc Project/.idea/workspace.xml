@@ -412,7 +412,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38019000" />
+    <option name="totallyTimeSpent" value="38540000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,7 +476,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/StageGeneration.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/StageGeneration.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/GameSettings.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/OptionsMenu.cs" />
@@ -796,6 +795,14 @@
             <marker date="1528135999212" expanded="true" signature="966:1274" ph="{...}" />
             <marker date="1528135999212" expanded="true" signature="1031:1264" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Dynamic Flickering Light/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
