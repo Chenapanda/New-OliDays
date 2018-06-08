@@ -11,7 +11,7 @@ public class enemy : MonoBehaviour {
     private Collider[] withinAggroColliders;
     private PlayerMovement player;
 
-    public Vector2 roomPos;
+    public Vector3 roomPos;
     public int range = 4;
     public Transform playertransform;
     public float speed = 0.04f;
@@ -41,7 +41,9 @@ public class enemy : MonoBehaviour {
 	}
 
 	void Update(){
-		if (Vector3.Distance(playertransform.position, this.transform.position) < range)
+        bool shouldchase = ((roomPos.x < playertransform.position.x) && (playertransform.position.x < roomPos.x + 7)) && ((roomPos.z < playertransform.position.z) && (playertransform.position.z < roomPos.z + 7));
+
+        if (shouldchase)
 		{
 			Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
@@ -59,7 +61,6 @@ public class enemy : MonoBehaviour {
 	
     public void ishit(float dmg)
     {
-        print(roomPos);
         Health -= dmg;
         ShowFloatingText();
         if (Health <= 0)

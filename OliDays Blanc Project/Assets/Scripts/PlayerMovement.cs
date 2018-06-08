@@ -51,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
         if (Input.GetKey("d"))
         {
             //player.AddForce(speed * 10, 0, 0);
@@ -59,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey("z"))
         {
+
             //player.AddForce(0, 0, speed * 10);
             transform.Translate(0, 0, speed * Time.deltaTime);
         }
@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
             //player.AddForce(0, 0, -speed * 10);
             transform.Translate(0, 0, -speed * Time.deltaTime);
         }
+
     }
     private void OnGUI()
     {
