@@ -106,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enemy.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="enemy.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/enemy.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -126,6 +126,21 @@
                 <marker date="1528464380480" expanded="true" signature="1556:1777" ph="{...}" />
                 <marker date="1528464380480" expanded="true" signature="1830:2124" ph="/* public void PerformAttack() ... */" />
                 <marker date="1528464380480" expanded="true" signature="2160:2338" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Torchelight.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/torch/scripts/Torchelight.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <marker date="1528468484796" expanded="false" signature="6:44" ph="..." />
+                <marker date="1528468484796" expanded="true" signature="87:1397" ph="{...}" />
+                <marker date="1528468484796" expanded="true" signature="320:686" ph="{...}" />
+                <marker date="1528468484796" expanded="true" signature="706:1395" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -268,6 +283,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuAnglais.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/torch/scripts/Torchelight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorToPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
@@ -301,6 +317,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/torch/scripts/Torchelight.cs" />
       </list>
     </option>
   </component>
@@ -412,7 +429,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38540000" />
+    <option name="totallyTimeSpent" value="39236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -424,7 +441,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="-87" width="2418" height="1318" extended-state="6" />
+    <frame x="2391" y="-87" width="2418" height="1318" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -476,8 +493,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/StageGeneration.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/GameSettings.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/OptionsMenu.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/MainMenu.cs" />
     <entry file="file://D:/Menu/Assets/Menu/MainMenu.cs">
@@ -825,6 +840,27 @@
             <marker date="1528464380480" expanded="true" signature="1556:1777" ph="{...}" />
             <marker date="1528464380480" expanded="true" signature="1830:2124" ph="/* public void PerformAttack() ... */" />
             <marker date="1528464380480" expanded="true" signature="2160:2338" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Dynamic Flickering Light/FlickeringLight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2212">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/torch/scripts/Torchelight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1528468484796" expanded="false" signature="6:44" ph="..." />
+            <marker date="1528468484796" expanded="true" signature="87:1397" ph="{...}" />
+            <marker date="1528468484796" expanded="true" signature="320:686" ph="{...}" />
+            <marker date="1528468484796" expanded="true" signature="706:1395" ph="{...}" />
           </folding>
         </state>
       </provider>
