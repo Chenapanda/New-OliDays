@@ -224,18 +224,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="torch" t="Include">
-          <e p="README.txt" t="Include" />
-          <e p="scene" t="Include">
-            <e p="script" t="Include">
-              <e p="TorchSlider.cs" t="Include" />
-              <e p="Torchslider2.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="Torchelight.cs" t="Include" />
-          </e>
-        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
