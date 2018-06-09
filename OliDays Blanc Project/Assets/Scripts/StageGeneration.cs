@@ -348,10 +348,11 @@ public class StageGeneration : MonoBehaviour {
         float y = room.gridPos[1];
         bool canbebossroom = room.openBot && !room.openLeft && !room.openRight && !room.openTop || !room.openBot && room.openLeft && !room.openRight && !room.openTop || !room.openBot && !room.openLeft && room.openRight && !room.openTop || !room.openBot && !room.openLeft && !room.openRight && room.openTop;
         if (!boss && canbebossroom)
-        { 
+        {
             boss = true;
             Vector3 position = new Vector3(room.gridPos.y * 9, 0, room.gridPos.x * 9);
             enemy Boss = Bosses[Random.Range(0, Bosses.Length)];
+            Boss.GetComponent<enemy>().roomPos = new Vector3(room.gridPos.y * 9 - 3.5f, 0, room.gridPos.x * 9 - 3.5f);
             Instantiate(Boss, position, Quaternion.identity, transform);
         }
         else

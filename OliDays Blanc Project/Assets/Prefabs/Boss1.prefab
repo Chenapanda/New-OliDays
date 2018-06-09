@@ -124,6 +124,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ff0dc86f4680948bb18598da021680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomPos: {x: -30.5, y: 0, z: -30.5}
+  range: 4
+  playertransform: {fileID: 0}
+  speed: 0.02
+  aggroLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   textPrefab: {fileID: 1771234409125918, guid: 7b0995d64dbf9b7408d925207968420c, type: 2}
   dream: {fileID: 1492812344898824, guid: 8a55e31f1cc08df44809143b44567b18, type: 2}
   dreamA: {fileID: 1933531132432148, guid: bf39e8e95722aca41af29864b0942ce7, type: 2}

@@ -137,10 +137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ff0dc86f4680948bb18598da021680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPos: {x: 3, y: 2}
+  roomPos: {x: 5.5, y: 0, z: 23.5}
   range: 4
   playertransform: {fileID: 0}
-  speed: 0.04
+  speed: 0.03
   aggroLayerMask:
     serializedVersion: 2
     m_Bits: 256
