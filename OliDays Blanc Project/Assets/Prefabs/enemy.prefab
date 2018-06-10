@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463301620885780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.016302964, y: 0.503, z: 0.825}
+  m_LocalPosition: {x: 0, y: 0.503, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4424306443934104}
@@ -87,6 +87,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d6a1f0e1963add14bb2658c510969934, type: 2}
   m_StaticBatchInfo:
@@ -164,10 +165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ff0dc86f4680948bb18598da021680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPos: {x: 5.5, y: 0, z: 23.5}
+  roomPos: {x: -12.5, y: 0, z: 23.5}
   range: 4
   playertransform: {fileID: 0}
-  speed: 0.04
+  speed: 0.035
   aggroLayerMask:
     serializedVersion: 2
     m_Bits: 256
