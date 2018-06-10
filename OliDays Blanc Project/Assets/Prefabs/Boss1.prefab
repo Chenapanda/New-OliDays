@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 65636782794804602}
   - component: {fileID: 114052516665274604}
   - component: {fileID: 54021551804717130}
+  - component: {fileID: 195999454070569006}
   m_Layer: 0
   m_Name: Boss1
   m_TagString: enemy
@@ -152,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ff0dc86f4680948bb18598da021680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPos: {x: -12.5, y: 0, z: -39.5}
+  agent: {fileID: 195999454070569006}
+  roomPos: {x: -39.5, y: 0, z: -39.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.03
@@ -166,3 +168,24 @@ MonoBehaviour:
   type: 1
   health: 75
   loot: 100
+--- !u!195 &195999454070569006
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363289378841846}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
