@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 
 public class enemy : MonoBehaviour {   
-	private NavMeshAgent navAgent;
+    NavMeshAgent agent;
     private Collider[] withinAggroColliders;
     private PlayerMovement player;
 
@@ -38,14 +38,16 @@ public class enemy : MonoBehaviour {
     private void Start()
 	{
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
+		agent.GetComponent<NavMeshAgent>();
+
 	}
 
 	void Update(){
         bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
 
         if (shouldchase)
-		{
-			Vector3 direction = playertransform.position - this.transform.position;
+        {
+	        Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
 
 			
