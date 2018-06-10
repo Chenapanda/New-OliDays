@@ -18,6 +18,7 @@ public class StageGeneration : MonoBehaviour {
     public enemy[] Bosses;
     private bool boss = false;
     private bool powerup = false;
+    private int level = 0;
     // Use this for initialization
     void Start()
 {

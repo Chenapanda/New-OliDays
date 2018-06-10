@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 
 public class enemy : MonoBehaviour {   
-    NavMeshAgent agent;
+    public NavMeshAgent agent;
     private Collider[] withinAggroColliders;
     private PlayerMovement player;
 
@@ -47,7 +47,8 @@ public class enemy : MonoBehaviour {
 
         if (shouldchase)
         {
-	        Vector3 direction = playertransform.position - this.transform.position;
+            agent.SetDestination(playertransform.position);
+            /*Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
 
 			
@@ -56,8 +57,8 @@ public class enemy : MonoBehaviour {
 			if (direction.magnitude > 0.75f)
 			{
 				this.transform.Translate(0,0,speed);
-			}
-		}
+			}*/
+        }
 	}
 	
 	
