@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.Animations;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -11,6 +12,7 @@ public class enemy : MonoBehaviour {
     private Collider[] withinAggroColliders;
     private PlayerMovement player;
 
+	public GameObject playerbody;
     public Vector3 roomPos;
     public int range = 4;
     public Transform playertransform;
@@ -23,6 +25,11 @@ public class enemy : MonoBehaviour {
     public int type; //type0 =enemy normal type1 = boss
     public float health;
     public int loot;
+	public float distanceCac = 0.01f;
+
+    float lastpatate = 0, timeBetweenPatate = 2f;
+    bool canhit;
+	
     public float Health
     {
         get
@@ -38,6 +45,7 @@ public class enemy : MonoBehaviour {
     private void Start()
 	{
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
+		playerbody = GameObject.FindGameObjectWithTag("Player");
 		agent.GetComponent<NavMeshAgent>();
 
 	}
@@ -48,6 +56,16 @@ public class enemy : MonoBehaviour {
         if (shouldchase)
         {
             agent.SetDestination(playertransform.position);
+			/*print(agent.destination);
+	        print(playertransform.position);*/
+	        
+	        
+	        if ( agent.remainingDistance <= distanceCac)
+            {
+                 print(playerbody);
+                 Debug.Log("J'AI TOUCHE");
+                 Attacking();
+            }
             /*Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
 
@@ -59,6 +77,7 @@ public class enemy : MonoBehaviour {
 				this.transform.Translate(0,0,speed);
 			}*/
         }
+		    
 	}
 	
 	
@@ -103,4 +122,14 @@ public class enemy : MonoBehaviour {
         go.GetComponent<TextMesh>().text = health.ToString();
     }
 
+	void Attacking()
+	{
+		canhit = (lastpatate - timeBetweenPatate < Time.time);
+		if (canhit)
+		{
+			playerbody.GetComponent<PlayerMovement>().Health -= 1;
+			lastpatate = Time.time;
+		}
+		
+	}
 }

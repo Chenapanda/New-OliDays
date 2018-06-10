@@ -123,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player dead. Reset health.");
-        this.Health = 3f;
+        //this.Health = 3f;
     }
 
 }
