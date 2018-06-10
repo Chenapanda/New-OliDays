@@ -7,21 +7,22 @@ public class GameOver : MonoBehaviour
 {
 
 	public GameObject GameOverUI;
-	public PlayerMovement player;
-	public GameObject playerbody;
+
+	private StageGeneration stage;
 
 	public void Restart()
 	{
-		SceneManager.LoadScene("Main", LoadSceneMode.Single);
+		Debug.Log("ON REDEMARRE BABY STILL NOT DEAD");
 	}
 	// Use this for initialization
-	void Start () {
-		playerbody = GameObject.FindGameObjectWithTag("Player");
+	void Start ()
+	{
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (playerbody.active == false)
+		if (GetComponent<PlayerMovement>().Health == 0)
 		{
 			GameOverUI.SetActive(true);
 		}
