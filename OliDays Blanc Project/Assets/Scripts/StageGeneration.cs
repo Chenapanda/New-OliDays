@@ -11,7 +11,7 @@ public class StageGeneration : MonoBehaviour {
     int gridSizeX, gridSizeY, numberOfRooms;
     public GameObject roomObj;
     public GameObject Terrain;
-    public GameObject enemy;
+    public GameObject[] enemys;
     public Texture2D[] patterns;
     public Texture2D[] poweruprooms;
     public ColorToPrefabs[] colorMappings;
@@ -404,6 +404,7 @@ public class StageGeneration : MonoBehaviour {
                 {
                     if (colorMapping.color == Color.red)
                     {
+                        GameObject enemy = enemys[Random.Range(0, enemys.Length)];
                         enemy.GetComponent<enemy>().roomPos = new Vector3 (room.gridPos.y * 9 - 3.5f, 0, room.gridPos.x * 9 - 3.5f);
                         Vector3 thisposition = new Vector3(room.gridPos.y * 9 - 3.5f + i, 0, room.gridPos.x * 9 - 3.5f + j);
                         Instantiate(enemy, thisposition, Quaternion.identity, transform);

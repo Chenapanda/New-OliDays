@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject self;
     public Rigidbody player;
     public int speed;
+    public float maxSpeed;
     public Texture2D Staff;
     public Texture2D Hp;
     private float health = 3f;
@@ -51,29 +52,50 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Move();
+    }
+    public void Move()
+    {
         if (Input.GetKey("d"))
         {
-            //player.AddForce(speed * 10, 0, 0);
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            player.AddForce(speed * 10, 0, 0);
+            //transform.Translate(speed * Time.deltaTime, 0, 0);
         }
         if (Input.GetKey("z"))
         {
 
-            //player.AddForce(0, 0, speed * 10);
-            transform.Translate(0, 0, speed * Time.deltaTime);
+            player.AddForce(0, 0, speed * 10);
+            //transform.Translate(0, 0, speed * Time.deltaTime);
         }
         if (Input.GetKey("q"))
         {
-            //player.AddForce(-speed * 10, 0, 0);
-            transform.Translate(-speed * Time.deltaTime, 0, 0);
+            player.AddForce(-speed * 10, 0, 0);
+            //transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
         if (Input.GetKey("s"))
         {
-            //player.AddForce(0, 0, -speed * 10);
-            transform.Translate(0, 0, -speed * Time.deltaTime);
+            player.AddForce(0, 0, -speed * 10);
+            //transform.Translate(0, 0, -speed * Time.deltaTime);
         }
-
+        
+        if (player.velocity.x > maxSpeed)
+        {
+            player.velocity = new Vector3(maxSpeed, player.velocity.y, player.velocity.z);
+        }
+        if (player.velocity.x < -maxSpeed)
+        {
+            player.velocity = new Vector3(-maxSpeed, player.velocity.y, player.velocity.z);
+        }
+        if (player.velocity.z > maxSpeed)
+        {
+            player.velocity = new Vector3(player.velocity.x, player.velocity.y, maxSpeed);
+        }
+        if (player.velocity.z < -maxSpeed)
+        {
+            player.velocity = new Vector3(player.velocity.x, player.velocity.y, -maxSpeed);
+        }
     }
+
     private void OnGUI()
     {
         for (int i = 0; i < Health; i++)
