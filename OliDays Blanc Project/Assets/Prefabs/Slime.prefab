@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463301620885780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.25, y: 0.48019254, z: 0.18471912}
+  m_LocalPosition: {x: 0.69, y: 0.89937484, z: -0.057798907}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4424306443934104}
@@ -138,7 +138,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463301620885780}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.50670946, y: 0.38359573, z: 0.50898844}
@@ -166,7 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 195374882644496314}
-  roomPos: {x: -3.5, y: 0, z: 14.5}
+  playerbody: {fileID: 1000012979649092, guid: 9c8e6b52a146b2d4994f42592a19bba0, type: 2}
+  roomPos: {x: -12.5, y: 0, z: -12.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.035
@@ -180,6 +181,8 @@ MonoBehaviour:
   type: 0
   health: 15
   loot: 50
+  distanceCac: 0.001
+  other: {fileID: 0}
 --- !u!195 &195374882644496314
 NavMeshAgent:
   m_ObjectHideFlags: 1

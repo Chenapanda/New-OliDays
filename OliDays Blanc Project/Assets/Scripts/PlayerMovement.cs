@@ -123,6 +123,7 @@ public class PlayerMovement : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player dead. Reset health.");
+        Destroy(gameObject);
         //this.Health = 3f;
     }
 

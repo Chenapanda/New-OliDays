@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.Animations;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 using Random = UnityEngine.Random;
 
 
@@ -25,9 +26,10 @@ public class enemy : MonoBehaviour {
     public int type; //type0 =enemy normal type1 = boss
     public float health;
     public int loot;
-	public float distanceCac = 0.01f;
+	public float distanceCac = 0.001f;
 
-    float lastpatate = 0, timeBetweenPatate = 2f;
+
+    float lastpatate = 0, timeBetweenPatate = 10f;
     bool canhit;
 	
     public float Health
@@ -60,12 +62,17 @@ public class enemy : MonoBehaviour {
 	        print(playertransform.position);*/
 	        
 	        
-	        if ( agent.remainingDistance <= distanceCac)
+	        /*if ( agent.remainingDistance <= distanceCac)
             {
                  print(playerbody);
                  Debug.Log("J'AI TOUCHE");
                  Attacking();
-            }
+	            
+	             if (playerbody.GetComponent<PlayerMovement>().Health == 0)
+	             {
+		             Debug.Log("Game Over");
+	             } 
+            }*/
             /*Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
 
@@ -118,8 +125,9 @@ public class enemy : MonoBehaviour {
 
     public void ShowFloatingText()
     {
-        var go = Instantiate(textPrefab, transform.position, textPrefab.transform.rotation, transform);
+	    var go = Instantiate(textPrefab, transform.position, textPrefab.transform.rotation, transform);
         go.GetComponent<TextMesh>().text = health.ToString();
+
     }
 
 	void Attacking()
@@ -127,9 +135,22 @@ public class enemy : MonoBehaviour {
 		canhit = (lastpatate - timeBetweenPatate < Time.time);
 		if (canhit)
 		{
-			playerbody.GetComponent<PlayerMovement>().Health -= 1;
+			playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
 			lastpatate = Time.time;
 		}
-		
 	}
+	
+	void OnCollisionEnter(Collision col)
+	{
+		canhit = (lastpatate - timeBetweenPatate < Time.time);
+		if (col.gameObject.tag == "enemy")
+		{
+			Debug.Log("TEAM KILL BITCH I GOT YA");
+		}
+		if (col.gameObject.tag == "Player" && canhit)
+		{
+			playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
+		}
+	}
+	
 }
