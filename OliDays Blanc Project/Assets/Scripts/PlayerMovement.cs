@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Audio.Google;
 
 public class PlayerMovement : MonoBehaviour
 {
 
+    public GameObject GameOverUI;
     public GameObject self;
     public Rigidbody player;
     public int speed;
@@ -123,7 +125,8 @@ public class PlayerMovement : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player dead. Reset health.");
-        this.Health = 3f;
+        GameOverUI.SetActive(true);
+        Destroy(self);
     }
 
 }

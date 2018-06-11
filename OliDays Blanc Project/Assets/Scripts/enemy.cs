@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -11,6 +12,11 @@ public class enemy : MonoBehaviour {
     private Collider[] withinAggroColliders;
     private PlayerMovement player;
 
+	private float lastPatate = 0f, timeBetweenPatate = 2f;
+	private bool canhit;
+
+	public Collision col;
+	public GameObject playerbody;
     public Vector3 roomPos;
     public int range = 4;
     public Transform playertransform;
@@ -23,6 +29,7 @@ public class enemy : MonoBehaviour {
     public int type; //type0 =enemy normal type1 = boss
     public float health;
     public int loot;
+	public float distanceCac = 0.001f;
     public float Health
     {
         get
@@ -38,6 +45,7 @@ public class enemy : MonoBehaviour {
     private void Start()
 	{
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
+		playerbody = GetComponent<PlayerMovement>().self;
 		agent.GetComponent<NavMeshAgent>();
 
 	}
@@ -48,9 +56,10 @@ public class enemy : MonoBehaviour {
         if (shouldchase)
         {
             agent.SetDestination(playertransform.position);
+			OnCollisionEnter(col);
+                     	        
             /*Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;
-
 			
 			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1);
 
@@ -59,6 +68,7 @@ public class enemy : MonoBehaviour {
 				this.transform.Translate(0,0,speed);
 			}*/
         }
+		
 	}
 	
 	
@@ -102,5 +112,19 @@ public class enemy : MonoBehaviour {
         var go = Instantiate(textPrefab, transform.position, textPrefab.transform.rotation, transform);
         go.GetComponent<TextMesh>().text = health.ToString();
     }
-
+	
+	 void OnCollisionEnter(Collision col)
+	{
+		if (col.gameObject.tag == "ememy")
+		{
+			Debug.Log(" =TK BITCH GOTCHA");
+		}
+ 
+		if (col.gameObject.tag == "Player")
+		{
+			Debug.Log("Damages dealt");
+			playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
+		}
+ 
+	}
 }
