@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
     
     public void TakeDamage(int amount)
     {
+        
         Health -= amount;
         if (Health <= 0)
             Die();
