@@ -69,34 +69,13 @@ public class enemy : MonoBehaviour {
 	void Update(){
         if (transform != null)
         {
-            if (transform != null)
+            bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
+            if (shouldchase && !isAttacking)
             {
-                bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
-                if (shouldchase)
-                {
-                    agent.SetDestination(playertransform.position);
-	                if (!isAttacking)
-	                {
-		                animator.Play("Move", -1);
-	                }
-	                
-
-	                /*OnCollisionEnter(col);
-
-	                /*Vector3 direction = playertransform.position - this.transform.position;
-	                direction.y = 0;
-
-	                this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1);
-
-	                if (direction.magnitude > 0.75f)
-	                {
-	                    this.transform.Translate(0,0,speed);
-	                }*/
-                }
+            	agent.SetDestination(playertransform.position);
+	        	animator.Play("Move");
             }
-
         }
-
     }
 	
 	
@@ -141,18 +120,21 @@ public class enemy : MonoBehaviour {
         go.GetComponent<TextMesh>().text = health.ToString();
     }
 	
-	 void OnCollisionEnter(Collision col)
+	 IEnumerator OnCollisionEnter(Collision col)
 	 {
+		 isAttacking = true;
 		 if (col.gameObject.tag == "Player")
 		 {
 			 animator.Play("Attack", -1);
 			 Debug.Log("Damages dealt");
 			 playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
 		 }
-
-		 animator.Play("Move");
+		 animator.Play("Attack",-1);
+		 yield return new WaitForSeconds(1);
+		 isAttacking = false;
 	 }
-
+	
+	
 	void OnCollisionStay(Collision col)
 	{
 		Debug.Log("je reste je reste BITCH");

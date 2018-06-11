@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 95000238965198704}
   m_Layer: 0
   m_Name: Ghost_Lv1
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,7 +308,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1892212088774462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.04, y: 0.2148763, z: 0.18471912}
+  m_LocalPosition: {x: 2.02, y: 0.15306789, z: 0.18471912}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
   m_Children:
   - {fileID: 4190930424174446}
@@ -481,7 +481,7 @@ MonoBehaviour:
   agent: {fileID: 195476821419834400}
   animator: {fileID: 95000238965198704}
   playerbody: {fileID: 0}
-  roomPos: {x: -30.5, y: 0, z: 23.5}
+  roomPos: {x: -12.5, y: 0, z: 14.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.04
