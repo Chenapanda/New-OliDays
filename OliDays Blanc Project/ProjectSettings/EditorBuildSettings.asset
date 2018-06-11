@@ -14,9 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/MenuAnglais.unity
     guid: 5b22eecbcaba53f46ac34eeadc85a1ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/MainAnglais.unity
     guid: 123df6ca43b6e1a488edd2ddfce60f52

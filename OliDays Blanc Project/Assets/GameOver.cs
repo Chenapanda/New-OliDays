@@ -13,7 +13,10 @@ public class GameOver : MonoBehaviour
 
 	public void Restart()
 	{
+		GameOverUI.SetActive(false);
+		SceneManager.LoadScene("Main");
 		Debug.Log("ON REDEMARRE BABY STILL NOT DEAD");
+		Time.timeScale = 1f;
 	}
 	// Use this for initialization
 	void Start ()
