@@ -5,7 +5,19 @@ using UnityEngine;
 public class ShopItem : PowerUp {
     public PowerUp powerup;
     public int cost;
+    public int costUp = 2;
+    public GameObject text;
+    private GameObject go;
 
+    private void Start()
+    {
+        go = Instantiate(text, transform.position, text.transform.rotation, transform);
+    }
+
+    private void Update()
+    {
+        go.GetComponent<TextMesh>().text = cost.ToString() + "D";
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -14,6 +26,7 @@ public class ShopItem : PowerUp {
             {
                 Power(other);
                 other.GetComponent<PlayerMovement>().Dreams -= cost;
+                cost += costUp;
             }
         }
 

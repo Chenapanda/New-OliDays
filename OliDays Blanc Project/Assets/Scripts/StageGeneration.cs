@@ -16,6 +16,7 @@ public class StageGeneration : MonoBehaviour {
     public Texture2D[] poweruprooms;
     public ColorToPrefabs[] colorMappings;
     public enemy[] Bosses;
+    public GameObject[] ShopItems;
     private bool boss = false;
     private bool powerup = false;
     private int level = 0;
@@ -345,6 +346,13 @@ public class StageGeneration : MonoBehaviour {
 
     public void GenerateRooms(Room room, int ind)
     {
+        if (room.type == 1)
+        {
+            GameObject BuyHp = ShopItems[0];
+            GameObject BuyStr = ShopItems[1];
+            Instantiate(BuyHp, BuyHp.transform.position, BuyHp.transform.rotation);
+            Instantiate(BuyStr, BuyStr.transform.position, BuyStr.transform.rotation);
+        }
         float x = room.gridPos[0];
         float y = room.gridPos[1];
         bool canbebossroom = room.openBot && !room.openLeft && !room.openRight && !room.openTop || !room.openBot && room.openLeft && !room.openRight && !room.openTop || !room.openBot && !room.openLeft && room.openRight && !room.openTop || !room.openBot && !room.openLeft && !room.openRight && room.openTop;
