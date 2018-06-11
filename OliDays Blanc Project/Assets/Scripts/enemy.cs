@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -14,7 +15,9 @@ public class enemy : MonoBehaviour {
 
 	private float lastPatate = 0f, timeBetweenPatate = 2f;
 	private bool canhit;
+	private bool isAttacking;
 
+	public Animator animator;
 	public Collision col;
 	public GameObject playerbody;
     public Vector3 roomPos;
@@ -47,7 +50,7 @@ public class enemy : MonoBehaviour {
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
 		playerbody = GameObject.FindGameObjectWithTag("Player");
 		agent.GetComponent<NavMeshAgent>();
-
+		animator.GetComponent<Animator>();
 	}
 
 	void Update(){
@@ -56,9 +59,10 @@ public class enemy : MonoBehaviour {
             if (transform != null)
             {
                 bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
-                if (shouldchase)
+                if (shouldchase && !isAttacking)
                 {
                     agent.SetDestination(playertransform.position);
+	                animator.Play("Move", -1);
                     /*OnCollisionEnter(col);
 
                     /*Vector3 direction = playertransform.position - this.transform.position;
@@ -122,12 +126,15 @@ public class enemy : MonoBehaviour {
     }
 	
 	 void OnCollisionEnter(Collision col)
-	{
-		if (col.gameObject.tag == "Player")
-		{
-			Debug.Log("Damages dealt");
-			playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
-		}
- 
-	}
+	 {
+		 
+		 if (col.gameObject.tag == "Player")
+		 {
+			 animator.Play("Attack", -1);
+			 Debug.Log("Damages dealt");
+			 playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
+		 }
+
+		 isAttacking = true;
+	 }
 }

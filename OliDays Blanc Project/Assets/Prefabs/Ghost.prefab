@@ -308,7 +308,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1892212088774462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.675, y: 0.1743666, z: 0.18471912}
+  m_LocalPosition: {x: 3.898, y: 0.04833898, z: 0.18471912}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4190930424174446}
@@ -479,8 +479,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 195476821419834400}
+  animator: {fileID: 95000238965198704}
   playerbody: {fileID: 0}
-  roomPos: {x: -12.5, y: 0, z: 23.5}
+  roomPos: {x: -3.5, y: 0, z: 14.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.04

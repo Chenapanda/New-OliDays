@@ -40,10 +40,10 @@ ModelImporter:
     400030: SlimeRightJoint
     400032: SlimeRootJoint
     4300000: SlimeLevel1
-    7400000: slime_idle
-    7400002: slime_move
-    7400004: slime_attack
-    7400006: slime_die
+    7400000: Idle
+    7400002: Move
+    7400004: Attack
+    7400006: Die
     9500000: //RootNode
     13700000: SlimeLevel1 1
   externalObjects:
@@ -51,7 +51,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SlimeMaterial
-    second: {fileID: 2100000, guid: 1bb2774977dbbf541a3268310eaf9795, type: 2}
+    second: {fileID: 2100000, guid: 10e6b0facc000204e990da1b92dd3e6c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -79,7 +79,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: slime_idle
+      name: Idle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 24
@@ -141,7 +141,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: slime_move
+      name: Move
       takeName: Take 001
       firstFrame: 30
       lastFrame: 54
@@ -203,7 +203,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: slime_attack
+      name: Attack
       takeName: Take 001
       firstFrame: 60
       lastFrame: 80
@@ -265,7 +265,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: slime_die
+      name: Die
       takeName: Take 001
       firstFrame: 90
       lastFrame: 112
