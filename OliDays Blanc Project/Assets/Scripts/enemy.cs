@@ -30,6 +30,7 @@ public class enemy : MonoBehaviour {
     public float health;
     public int loot;
 	public float distanceCac = 0.001f;
+    public GameObject StageGeneration;
     public float Health
     {
         get
@@ -44,11 +45,19 @@ public class enemy : MonoBehaviour {
 
     private void Start()
 	{
+        StageGeneration = GameObject.FindGameObjectWithTag("Stage");
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
 		playerbody = GameObject.FindGameObjectWithTag("Player");
 		agent.GetComponent<NavMeshAgent>();
-
-	}
+        if (type == 0)
+        {
+            health += StageGeneration.GetComponent<StageGeneration>().difficulty * 10;
+        }
+        if (type == 1)
+        {
+            health += StageGeneration.GetComponent<StageGeneration>().difficulty * 50;
+        }
+    }
 
 	void Update(){
         if (transform != null)

@@ -8,6 +8,8 @@ TagManager:
   - Dreams
   - cube
   - sphere
+  - Script
+  - Stage
   layers:
   - Default
   - TransparentFX
