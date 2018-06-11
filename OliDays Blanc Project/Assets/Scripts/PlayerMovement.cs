@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public GameObject GameOverUI;
     public GameObject self;
     public Rigidbody player;
     public int speed;
@@ -124,11 +123,7 @@ public class PlayerMovement : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player dead. Reset health.");
-        GameOverUI.SetActive(true);
-        Time.timeScale = 0f;
-        Destroy(self);
-        // Destroy(gameObject);
-        //this.Health = 3f;
+        this.Health = 3f;
     }
 
 }
