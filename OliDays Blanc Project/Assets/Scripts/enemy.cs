@@ -17,6 +17,7 @@ public class enemy : MonoBehaviour {
 	private bool canhit;
 	private bool isAttacking;
 
+
 	public Animator animator;
 	public Collision col;
 	public GameObject playerbody;
@@ -71,10 +72,14 @@ public class enemy : MonoBehaviour {
             if (transform != null)
             {
                 bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
-                if (shouldchase && !isAttacking)
+                if (shouldchase)
                 {
                     agent.SetDestination(playertransform.position);
-	                animator.Play("Move", -1);
+	                if (!isAttacking)
+	                {
+		                animator.Play("Move", -1);
+	                }
+	                
 
 	                /*OnCollisionEnter(col);
 
@@ -138,7 +143,6 @@ public class enemy : MonoBehaviour {
 	
 	 void OnCollisionEnter(Collision col)
 	 {
-		 
 		 if (col.gameObject.tag == "Player")
 		 {
 			 animator.Play("Attack", -1);
@@ -146,6 +150,11 @@ public class enemy : MonoBehaviour {
 			 playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
 		 }
 
-		 isAttacking = true;
+		 animator.Play("Move");
 	 }
+
+	void OnCollisionStay(Collision col)
+	{
+		Debug.Log("je reste je reste BITCH");
+	}
 }

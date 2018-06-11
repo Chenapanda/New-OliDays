@@ -13,7 +13,10 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
     public Texture2D Staff;
     public Texture2D Hp;
-    private float health = 3f;
+    public float health = 3f;
+    private float lastShot = 0;
+    public float timeBetweenShots = .35f;
+    public bool canBeHit = true;
     public float Health
     {
         get
@@ -117,10 +120,15 @@ public class PlayerMovement : MonoBehaviour
     
     public void TakeDamage(int amount)
     {
+        bool canBeHit = (lastShot + timeBetweenShots < Time.time);
+        if (canBeHit)
+        {
+            Health -= amount;
+            if (Health <= 0)
+               Die();
+            lastShot = Time.time;
+        }
         
-        Health -= amount;
-        if (Health <= 0)
-            Die();
     }
     
     private void Die()

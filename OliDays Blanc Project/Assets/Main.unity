@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -6498,6 +6498,9 @@ MonoBehaviour:
   maxSpeed: 4
   Staff: {fileID: 2800000, guid: 25b6feaf63539bc4e9734fe3ff9abfaf, type: 3}
   Hp: {fileID: 2800000, guid: a1c2e885bcc0a9041856001de35caffa, type: 3}
+  health: 20
+  timeBetweenShots: 1
+  canBeHit: 0
 --- !u!65 &909869387
 BoxCollider:
   m_ObjectHideFlags: 0
