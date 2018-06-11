@@ -16,6 +16,13 @@ public class enemy : MonoBehaviour {
 	private float lastPatate = 0f, timeBetweenPatate = 2f;
 	private bool canhit;
 	private bool isAttacking;
+	
+	public string IDLE	= "Anim_Idle";
+	public string ATTACK	= "Anim_Attack";
+	public string DAMAGE	= "Anim_Damage";
+	public string DEATH	= "Anim_Death";
+
+	public Animation anim;
 
 
 	public Animator animator;
@@ -53,7 +60,10 @@ public class enemy : MonoBehaviour {
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
 		playerbody = GameObject.FindGameObjectWithTag("Player");
 		agent.GetComponent<NavMeshAgent>();
-		animator.GetComponent<Animator>();
+		if (animator != null)
+		{
+			animator.GetComponent<Animator>();
+		}
 
         if (type == 0)
         {
@@ -73,6 +83,7 @@ public class enemy : MonoBehaviour {
             if (shouldchase && !isAttacking)
             {
             	agent.SetDestination(playertransform.position);
+	            anim.Play(ATTACK);
 	        	animator.Play("Move");
             }
         }
@@ -123,20 +134,20 @@ public class enemy : MonoBehaviour {
 	 IEnumerator OnCollisionEnter(Collision col)
 	 {
 		 isAttacking = true;
-		 if (col.gameObject.tag == "Player")
+		 if (col.gameObject.tag == "Player") 
 		 {
-			 animator.Play("Attack", -1);
-			 Debug.Log("Damages dealt");
-			 playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
+			 if (type == 1)
+			 {
+				 anim.Play(ATTACK);
+			 }
+			 else
+			 {
+				 animator.Play("Attack", -1);
+			 }
+			Debug.Log("Damages dealt");
+         	playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
 		 }
-		 animator.Play("Attack",-1);
 		 yield return new WaitForSeconds(1);
 		 isAttacking = false;
 	 }
-	
-	
-	void OnCollisionStay(Collision col)
-	{
-		Debug.Log("je reste je reste BITCH");
-	}
 }
