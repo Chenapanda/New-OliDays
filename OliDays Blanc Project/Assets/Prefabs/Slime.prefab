@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 195374882644496314}
-  playerbody: {fileID: 1000012979649092, guid: 9c8e6b52a146b2d4994f42592a19bba0, type: 2}
+  playerbody: {fileID: 0}
   roomPos: {x: -12.5, y: 0, z: -12.5}
   range: 4
   playertransform: {fileID: 0}
@@ -182,7 +182,6 @@ MonoBehaviour:
   health: 15
   loot: 50
   distanceCac: 0.001
-  other: {fileID: 0}
 --- !u!195 &195374882644496314
 NavMeshAgent:
   m_ObjectHideFlags: 1
