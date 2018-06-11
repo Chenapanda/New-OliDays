@@ -8,10 +8,11 @@ public class ShopItem : PowerUp {
     public int costUp = 2;
     public GameObject text;
     private GameObject go;
+    //public float offset = 9f;
 
     private void Start()
     {
-        go = Instantiate(text, transform.position, text.transform.rotation, transform);
+        go = Instantiate(text, transform.position + text.transform.position, text.transform.rotation, transform);
     }
 
     private void Update()
