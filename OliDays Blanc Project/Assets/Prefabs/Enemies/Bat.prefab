@@ -1437,6 +1437,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 195238747200208112}
+  IDLE: Anim_Idle
+  ATTACK: Anim_Attack
+  DAMAGE: Anim_Damage
+  DEATH: Anim_Death
+  anim: {fileID: 0}
   animator: {fileID: 95816725737464422}
   playerbody: {fileID: 0}
   roomPos: {x: -3.5, y: 0, z: 23.5}
@@ -1547,7 +1552,7 @@ NavMeshAgent:
   m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 480
-  m_StoppingDistance: 1
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
   m_AutoRepath: 1

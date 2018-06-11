@@ -83,7 +83,7 @@ public class enemy : MonoBehaviour {
             if (shouldchase && !isAttacking)
             {
             	agent.SetDestination(playertransform.position);
-	            anim.Play(ATTACK);
+	            anim.Play(IDLE);
 	        	animator.Play("Move");
             }
         }
@@ -154,9 +154,11 @@ public class enemy : MonoBehaviour {
 				 animator.Play("Attack", -1);
 			 }
 			Debug.Log("Damages dealt");
-         	playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
+			playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
+
 		 }
 		 yield return new WaitForSeconds(1);
+		 agent.destination = playertransform.position;
 		 isAttacking = false;
 	 }
 }
