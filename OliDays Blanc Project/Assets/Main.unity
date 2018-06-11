@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 25331070}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 48772546}
   m_Layer: 5
   m_Name: RestartButton
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 72396971}
   m_Layer: 0
   m_Name: Upper Arm.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 72483521}
   m_Layer: 0
   m_Name: Upper Leg.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 94658446}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -505,7 +505,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: -451526800
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3862,7 +3862,7 @@ GameObject:
   - component: {fileID: 114506629}
   m_Layer: 5
   m_Name: GameOverScreen
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3951,7 +3951,7 @@ GameObject:
   - component: {fileID: 116495746}
   m_Layer: 5
   m_Name: QuitButton
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4070,7 +4070,7 @@ GameObject:
   - component: {fileID: 157108929}
   m_Layer: 0
   m_Name: Foot.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4101,7 +4101,7 @@ GameObject:
   - component: {fileID: 157339233}
   m_Layer: 5
   m_Name: TMP SubMeshUI [GoodMorning Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4168,7 +4168,7 @@ GameObject:
   - component: {fileID: 213054211}
   m_Layer: 0
   m_Name: Armature
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4202,7 +4202,7 @@ GameObject:
   - component: {fileID: 237114415}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4318,7 +4318,7 @@ GameObject:
   - component: {fileID: 239544736}
   m_Layer: 0
   m_Name: Leg ik.R.001_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4346,7 +4346,7 @@ GameObject:
   - component: {fileID: 250250981}
   m_Layer: 0
   m_Name: Fingers 01.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4375,7 +4375,7 @@ GameObject:
   - component: {fileID: 251452487}
   m_Layer: 0
   m_Name: leg pole target.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4404,7 +4404,7 @@ GameObject:
   - component: {fileID: 263337049}
   m_Layer: 0
   m_Name: leg pole target.R.001_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4432,7 +4432,7 @@ GameObject:
   - component: {fileID: 273250916}
   m_Layer: 0
   m_Name: Thumbs 02.L_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4460,7 +4460,7 @@ GameObject:
   - component: {fileID: 277635348}
   m_Layer: 0
   m_Name: Bottom Leg.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4489,7 +4489,7 @@ GameObject:
   - component: {fileID: 282777351}
   m_Layer: 0
   m_Name: Leg ik.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4521,7 +4521,7 @@ GameObject:
   - component: {fileID: 303315554}
   m_Layer: 5
   m_Name: QuitButton
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4642,7 +4642,7 @@ GameObject:
   - component: {fileID: 305500442}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4795,7 +4795,7 @@ GameObject:
   - component: {fileID: 348732341}
   m_Layer: 0
   m_Name: Fill Area
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4849,7 +4849,7 @@ GameObject:
   - component: {fileID: 382072140}
   m_Layer: 5
   m_Name: GameOverButton
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5007,7 +5007,7 @@ GameObject:
   - component: {fileID: 406778428}
   m_Layer: 0
   m_Name: Lower Arm.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5038,7 +5038,7 @@ GameObject:
   - component: {fileID: 408912087}
   m_Layer: 5
   m_Name: Minimap
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5106,7 +5106,7 @@ GameObject:
   - component: {fileID: 410636842}
   m_Layer: 5
   m_Name: ResumeButton
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5228,7 +5228,7 @@ GameObject:
   - component: {fileID: 413195393}
   m_Layer: 5
   m_Name: MenuButton
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5349,7 +5349,7 @@ GameObject:
   - component: {fileID: 434209219}
   m_Layer: 5
   m_Name: Recommencer
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5502,7 +5502,7 @@ GameObject:
   - component: {fileID: 502960536}
   m_Layer: 0
   m_Name: Leg ik.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5533,7 +5533,7 @@ GameObject:
   - component: {fileID: 503573724}
   m_Layer: 5
   m_Name: GameOver
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5686,7 +5686,7 @@ GameObject:
   - component: {fileID: 507475370}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5714,7 +5714,7 @@ GameObject:
   - component: {fileID: 535608894}
   m_Layer: 0
   m_Name: Leg control.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5745,7 +5745,7 @@ GameObject:
   - component: {fileID: 596852316}
   m_Layer: 0
   m_Name: Lower Arm.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5775,7 +5775,7 @@ GameObject:
   - component: {fileID: 610363184}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5814,7 +5814,7 @@ GameObject:
   - component: {fileID: 619227994}
   m_Layer: 0
   m_Name: Thumbs 01.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5843,7 +5843,7 @@ GameObject:
   - component: {fileID: 658416528}
   m_Layer: 0
   m_Name: Fingers 02.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5872,7 +5872,7 @@ GameObject:
   - component: {fileID: 659753528}
   m_Layer: 0
   m_Name: Fingers 01.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5904,7 +5904,7 @@ GameObject:
   - component: {fileID: 661411291}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5991,7 +5991,7 @@ GameObject:
   - component: {fileID: 715347668}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6077,7 +6077,7 @@ GameObject:
   - component: {fileID: 718859782}
   m_Layer: 0
   m_Name: Torso
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6108,7 +6108,7 @@ GameObject:
   - component: {fileID: 723049700}
   m_Layer: 0
   m_Name: Toes.L_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6136,7 +6136,7 @@ GameObject:
   - component: {fileID: 809036039}
   m_Layer: 0
   m_Name: Fingers 02.R.001_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6164,7 +6164,7 @@ GameObject:
   - component: {fileID: 812393210}
   m_Layer: 0
   m_Name: Scripts
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6196,7 +6196,7 @@ GameObject:
   - component: {fileID: 834024039}
   m_Layer: 0
   m_Name: Room Class
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6238,7 +6238,7 @@ GameObject:
   - component: {fileID: 859512945}
   m_Layer: 0
   m_Name: RightWall
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6326,7 +6326,7 @@ GameObject:
   - component: {fileID: 885997161}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6441,7 +6441,7 @@ GameObject:
   - component: {fileID: 895823672}
   m_Layer: 0
   m_Name: Thumbs 02.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6538,7 +6538,7 @@ GameObject:
   - component: {fileID: 961559036}
   m_Layer: 5
   m_Name: Resume
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6692,7 +6692,7 @@ GameObject:
   - component: {fileID: 995333886}
   m_Layer: 0
   m_Name: Fingers 02.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6721,7 +6721,7 @@ GameObject:
   - component: {fileID: 997003430}
   m_Layer: 0
   m_Name: Head_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6749,7 +6749,7 @@ GameObject:
   - component: {fileID: 1003877370}
   m_Layer: 0
   m_Name: Bottom Leg.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6989,6 +6989,15 @@ Prefab:
       propertyPath: enemys.Array.data[3]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114945059109377358, guid: 0a2b78a548210e04eab5621df49f2a7c,
+        type: 2}
+      propertyPath: difficulty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915732043361856, guid: 0a2b78a548210e04eab5621df49f2a7c, type: 2}
+      propertyPath: m_TagString
+      value: Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a2b78a548210e04eab5621df49f2a7c, type: 2}
   m_IsPrefabParent: 0
@@ -7002,7 +7011,7 @@ GameObject:
   - component: {fileID: 1025147867}
   m_Layer: 0
   m_Name: Upper Leg.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7031,7 +7040,7 @@ GameObject:
   - component: {fileID: 1030632594}
   m_Layer: 0
   m_Name: Toes.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7060,7 +7069,7 @@ GameObject:
   - component: {fileID: 1048112790}
   m_Layer: 0
   m_Name: leg pole target.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7091,7 +7100,7 @@ GameObject:
   - component: {fileID: 1081339098}
   m_Layer: 5
   m_Name: Quit
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7247,7 +7256,7 @@ GameObject:
   - component: {fileID: 1090036497}
   m_Layer: 0
   m_Name: Weapon
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7295,7 +7304,7 @@ GameObject:
   - component: {fileID: 1102229669}
   m_Layer: 0
   m_Name: Bottom Leg.R.001_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7323,7 +7332,7 @@ GameObject:
   - component: {fileID: 1114407961}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7354,7 +7363,7 @@ GameObject:
   - component: {fileID: 1144018206}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7420,7 +7429,7 @@ GameObject:
   - component: {fileID: 1144129492}
   m_Layer: 0
   m_Name: Toes Control.R.001_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7448,7 +7457,7 @@ GameObject:
   - component: {fileID: 1148178091}
   m_Layer: 0
   m_Name: Bottom Leg.L_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7476,7 +7485,7 @@ GameObject:
   - component: {fileID: 1149388370}
   m_Layer: 0
   m_Name: Foot Roll.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7506,7 +7515,7 @@ GameObject:
   - component: {fileID: 1238496359}
   m_Layer: 0
   m_Name: WeaponLight
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7570,7 +7579,7 @@ GameObject:
   - component: {fileID: 1246632041}
   m_Layer: 0
   m_Name: Upper Arm.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7601,7 +7610,7 @@ GameObject:
   - component: {fileID: 1248788414}
   m_Layer: 0
   m_Name: Fill
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7669,7 +7678,7 @@ GameObject:
   - component: {fileID: 1258065997}
   m_Layer: 5
   m_Name: Quit
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7824,7 +7833,7 @@ GameObject:
   - component: {fileID: 1276821817}
   m_Layer: 0
   m_Name: ModelOli
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7877,7 +7886,7 @@ GameObject:
   - component: {fileID: 1287316762}
   m_Layer: 5
   m_Name: TMP SubMeshUI [GoodMorning Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7944,7 +7953,7 @@ GameObject:
   - component: {fileID: 1326865260}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7979,7 +7988,7 @@ GameObject:
   - component: {fileID: 1333155627}
   m_Layer: 0
   m_Name: OliLight
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8043,7 +8052,7 @@ GameObject:
   - component: {fileID: 1341769439}
   m_Layer: 0
   m_Name: Toes.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8072,7 +8081,7 @@ GameObject:
   - component: {fileID: 1357194156}
   m_Layer: 0
   m_Name: Hand.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8102,7 +8111,7 @@ GameObject:
   - component: {fileID: 1414001216}
   m_Layer: 0
   m_Name: Foot Roll.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8134,7 +8143,7 @@ GameObject:
   - component: {fileID: 1422515489}
   m_Layer: 0
   m_Name: LeftWall
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8220,7 +8229,7 @@ GameObject:
   - component: {fileID: 1431865476}
   m_Layer: 0
   m_Name: DownWall
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8305,7 +8314,7 @@ GameObject:
   - component: {fileID: 1443608761}
   m_Layer: 0
   m_Name: minimap camera
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8376,7 +8385,7 @@ GameObject:
   - component: {fileID: 1470090305}
   m_Layer: 0
   m_Name: Thumbs 02.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8405,11 +8414,11 @@ GameObject:
   - component: {fileID: 1511621994}
   m_Layer: 0
   m_Name: Lights
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1511621994
 Transform:
   m_ObjectHideFlags: 0
@@ -8434,7 +8443,7 @@ GameObject:
   - component: {fileID: 1520807051}
   m_Layer: 0
   m_Name: Thumbs 01.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8466,7 +8475,7 @@ GameObject:
   - component: {fileID: 1526869291}
   m_Layer: 5
   m_Name: SystemMinimap
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8559,7 +8568,7 @@ GameObject:
   - component: {fileID: 1578050068}
   m_Layer: 5
   m_Name: TMP SubMeshUI [GoodMorning Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8626,7 +8635,7 @@ GameObject:
   - component: {fileID: 1606100341}
   m_Layer: 0
   m_Name: Leg control.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8658,7 +8667,7 @@ GameObject:
   - component: {fileID: 1618738392}
   m_Layer: 10
   m_Name: PlayerMinimap
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8730,7 +8739,7 @@ GameObject:
   - component: {fileID: 1620210415}
   m_Layer: 0
   m_Name: Fingers 02.L_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8759,7 +8768,7 @@ GameObject:
   - component: {fileID: 1651019076}
   m_Layer: 0
   m_Name: VolumeSlider
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8858,7 +8867,7 @@ GameObject:
   - component: {fileID: 1651764794}
   m_Layer: 0
   m_Name: UpperWall
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8943,7 +8952,7 @@ GameObject:
   - component: {fileID: 1669752310}
   m_Layer: 0
   m_Name: Volume
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9098,7 +9107,7 @@ GameObject:
   - component: {fileID: 1725066290}
   m_Layer: 5
   m_Name: MinimapBorder
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9165,7 +9174,7 @@ GameObject:
   - component: {fileID: 1779015415}
   m_Layer: 0
   m_Name: Handle Slide Area
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9198,7 +9207,7 @@ GameObject:
   - component: {fileID: 1795327057}
   m_Layer: 0
   m_Name: Toes Control.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9230,7 +9239,7 @@ GameObject:
   - component: {fileID: 1801965259}
   m_Layer: 5
   m_Name: PauseMenu
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9318,7 +9327,7 @@ GameObject:
   - component: {fileID: 1828562444}
   m_Layer: 0
   m_Name: Directional Light
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9382,7 +9391,7 @@ GameObject:
   - component: {fileID: 1838455828}
   m_Layer: 0
   m_Name: Toes Control.L_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9505,7 +9514,7 @@ GameObject:
   - component: {fileID: 1841255876}
   m_Layer: 0
   m_Name: Thumbs 02.R.001_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9533,7 +9542,7 @@ GameObject:
   - component: {fileID: 1866024452}
   m_Layer: 0
   m_Name: Hand.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9566,7 +9575,7 @@ GameObject:
   - component: {fileID: 1869493125}
   m_Layer: 0
   m_Name: Underground
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9649,7 +9658,7 @@ GameObject:
   - component: {fileID: 1929283304}
   m_Layer: 0
   m_Name: leg pole target.L_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9677,7 +9686,7 @@ GameObject:
   - component: {fileID: 1951493251}
   m_Layer: 0
   m_Name: Foot.L
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9706,7 +9715,7 @@ GameObject:
   - component: {fileID: 1963748765}
   m_Layer: 0
   m_Name: Leg ik.L_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9736,7 +9745,7 @@ GameObject:
   - component: {fileID: 1996552168}
   m_Layer: 0
   m_Name: Cube.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9808,7 +9817,7 @@ GameObject:
   - component: {fileID: 2014734574}
   m_Layer: 0
   m_Name: Oli
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9850,7 +9859,7 @@ GameObject:
   - component: {fileID: 2016873449}
   m_Layer: 0
   m_Name: Neck
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9879,7 +9888,7 @@ GameObject:
   - component: {fileID: 2026181513}
   m_Layer: 0
   m_Name: Toes.R.001_end
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9907,7 +9916,7 @@ GameObject:
   - component: {fileID: 2044932517}
   m_Layer: 0
   m_Name: Chest
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9943,7 +9952,7 @@ GameObject:
   - component: {fileID: 2122866288}
   m_Layer: 0
   m_Name: Toes Control.R.001
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

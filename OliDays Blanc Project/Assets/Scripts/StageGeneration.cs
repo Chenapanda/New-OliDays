@@ -6,7 +6,7 @@ public class StageGeneration : MonoBehaviour {
     public GameObject roomU, roomD, roomL, roomR, roomUD, roomLR, roomUR, roomUL, roomDR, roomDL, roomUDL, roomULR, roomUDR, roomDLR, roomUDLR;
     private Vector2 stageSize = new Vector2 (4, 4);
     Room[,] rooms;
-    List<Vector2> occupiedPos = new List<Vector2>();
+    public List<Vector2> occupiedPos = new List<Vector2>();
     private int numberofrooms = 20;
     int gridSizeX, gridSizeY, numberOfRooms;
     public GameObject roomObj;
@@ -17,11 +17,12 @@ public class StageGeneration : MonoBehaviour {
     public ColorToPrefabs[] colorMappings;
     public enemy[] Bosses;
     public GameObject[] ShopItems;
-    private bool boss = false;
-    private bool powerup = false;
+    public int difficulty = 0;
+    public bool boss = false;
+    public bool powerup = false;
     private int level = 0;
     // Use this for initialization
-    void Start()
+    public void Start()
 {
         numberOfRooms = numberofrooms;
         if (numberOfRooms >= (stageSize.x * 2) * (stageSize.y * 2))
@@ -34,8 +35,9 @@ public class StageGeneration : MonoBehaviour {
         SetRoomDoors();
         DrawMap();
 
-}
-    void CreateRooms()
+
+    }
+    public void CreateRooms()
     {
         //setup
         rooms = new Room[gridSizeX * 2, gridSizeY * 2];
@@ -184,7 +186,7 @@ public class StageGeneration : MonoBehaviour {
         }
         return neighbors;
     }
-    void SetRoomDoors()
+    public void SetRoomDoors()
     {
         for (int i = 0; i < ((gridSizeX * 2)); i++)
         {
@@ -229,7 +231,7 @@ public class StageGeneration : MonoBehaviour {
             }
         }
     }
-    void PickRoomType(Room room)
+    public void PickRoomType(Room room)
     {
         if (room.openTop)
         {
@@ -325,7 +327,7 @@ public class StageGeneration : MonoBehaviour {
             
         
     
-    void DrawMap()
+    public void DrawMap()
         {
         int powerUpRoomInd = 8;
         foreach (Room room in rooms)
