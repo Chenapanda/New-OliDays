@@ -75,17 +75,18 @@ public class enemy : MonoBehaviour {
                 {
                     agent.SetDestination(playertransform.position);
 	                animator.Play("Move", -1);
-                    /*OnCollisionEnter(col);
 
-                    /*Vector3 direction = playertransform.position - this.transform.position;
-                    direction.y = 0;
+	                /*OnCollisionEnter(col);
 
-                    this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1);
+	                /*Vector3 direction = playertransform.position - this.transform.position;
+	                direction.y = 0;
 
-                    if (direction.magnitude > 0.75f)
-                    {
-                        this.transform.Translate(0,0,speed);
-                    }*/
+	                this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1);
+
+	                if (direction.magnitude > 0.75f)
+	                {
+	                    this.transform.Translate(0,0,speed);
+	                }*/
                 }
             }
 
