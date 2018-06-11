@@ -18,6 +18,7 @@ public class Dreams : MonoBehaviour {
         if (other.name == "Player")
         {
             other.GetComponent<PlayerMovement>().Dreams++; //Add 1 dream to the player (in PlayerMovement)
+            other.GetComponent<PlayerMovement>().score += 50;
             Destroy(gameObject);
         }
     }

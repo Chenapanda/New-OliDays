@@ -27,6 +27,7 @@ public class PowerUp : MonoBehaviour {
         {
             other.GetComponent<PlayerMovement>().Health += bonus;
         }
+        other.GetComponent<PlayerMovement>().score += bonus * 100;
         Instantiate(pickupEffect, transform.position + new Vector3(0, .5f, 0), pickupEffect.transform.rotation);
     }
 }
