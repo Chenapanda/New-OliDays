@@ -115,11 +115,6 @@ public class enemy : MonoBehaviour {
 	
 	 void OnCollisionEnter(Collision col)
 	{
-		if (col.gameObject.tag == "ememy")
-		{
-			Debug.Log(" =TK BITCH GOTCHA");
-		}
- 
 		if (col.gameObject.tag == "Player")
 		{
 			Debug.Log("Damages dealt");
