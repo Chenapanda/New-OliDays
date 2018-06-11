@@ -7,6 +7,7 @@ public class GameOver : MonoBehaviour
 {
 
 	public GameObject GameOverUI;
+	public GameObject playerbody;
 
 	private StageGeneration stage;
 
@@ -17,14 +18,16 @@ public class GameOver : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		
+		playerbody = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (GetComponent<PlayerMovement>().Health == 0)
+		if (playerbody.GetComponent<PlayerMovement>().Health == 0f)
 		{
+			Time.timeScale = 0f;
 			GameOverUI.SetActive(true);
+			Destroy(playerbody);
 		}
 	}
 }
