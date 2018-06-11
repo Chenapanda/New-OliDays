@@ -44,25 +44,26 @@
       <file leaf-file-name="enemy.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/enemy.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+            <state relative-caret-position="777">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <marker date="1528725122425" expanded="true" signature="6:167" ph="..." />
-                <marker date="1528725122425" expanded="true" signature="205:3104" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="897:1028" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="915:962" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="974:1022" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="1054:1232" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="1248:1960" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="1504:1954" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="1578:1944" ph="/* OnCollisionEnter(col); ... */" />
-                <marker date="1528725122425" expanded="true" signature="1997:2404" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="2079:2398" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="2134:2355" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="2408:2702" ph="/* public void PerformAttack() ... */" />
-                <marker date="1528725122425" expanded="true" signature="2738:2916" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="2957:3102" ph="{...}" />
-                <marker date="1528725122425" expanded="true" signature="2998:3097" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="6:167" ph="..." />
+                <marker date="1528727598714" expanded="true" signature="205:3241" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="897:1028" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="915:962" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="974:1022" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="1054:1232" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="1248:2097" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="1280:2089" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="1552:2079" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="1647:2065" ph="/* OnCollisionEnter(col); ... */" />
+                <marker date="1528727598714" expanded="true" signature="2134:2541" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="2216:2535" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="2271:2492" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="2545:2839" ph="/* public void PerformAttack() ... */" />
+                <marker date="1528727598714" expanded="true" signature="2875:3053" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="3094:3239" ph="{...}" />
+                <marker date="1528727598714" expanded="true" signature="3135:3234" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -356,7 +357,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46132000" />
+    <option name="totallyTimeSpent" value="47330000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -693,25 +694,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/enemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+        <state relative-caret-position="777">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <marker date="1528725122425" expanded="true" signature="6:167" ph="..." />
-            <marker date="1528725122425" expanded="true" signature="205:3104" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="897:1028" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="915:962" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="974:1022" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="1054:1232" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="1248:1960" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="1504:1954" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="1578:1944" ph="/* OnCollisionEnter(col); ... */" />
-            <marker date="1528725122425" expanded="true" signature="1997:2404" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="2079:2398" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="2134:2355" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="2408:2702" ph="/* public void PerformAttack() ... */" />
-            <marker date="1528725122425" expanded="true" signature="2738:2916" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="2957:3102" ph="{...}" />
-            <marker date="1528725122425" expanded="true" signature="2998:3097" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="6:167" ph="..." />
+            <marker date="1528727598714" expanded="true" signature="205:3241" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="897:1028" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="915:962" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="974:1022" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="1054:1232" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="1248:2097" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="1280:2089" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="1552:2079" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="1647:2065" ph="/* OnCollisionEnter(col); ... */" />
+            <marker date="1528727598714" expanded="true" signature="2134:2541" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="2216:2535" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="2271:2492" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="2545:2839" ph="/* public void PerformAttack() ... */" />
+            <marker date="1528727598714" expanded="true" signature="2875:3053" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="3094:3239" ph="{...}" />
+            <marker date="1528727598714" expanded="true" signature="3135:3234" ph="{...}" />
           </folding>
         </state>
       </provider>

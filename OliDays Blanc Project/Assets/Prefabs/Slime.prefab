@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54863582589066978}
   - component: {fileID: 114425272003090184}
   - component: {fileID: 195374882644496314}
+  - component: {fileID: 95697503816273636}
   m_Layer: 0
   m_Name: Slime
   m_TagString: enemy
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463301620885780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.69, y: 0.21, z: -0.14193162}
+  m_LocalPosition: {x: -2.89, y: 0.091, z: 0.18471912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4424306443934104}
@@ -69,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827111639722684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.004, y: 0.02, z: 0}
   m_LocalScale: {x: 22, y: 22, z: 22}
   m_Children: []
   m_Father: {fileID: 4135937016906040}
@@ -143,6 +144,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.50670946, y: 0.38359573, z: 0.50898844}
   m_Center: {x: -0.009399366, y: 0.17510389, z: -0.01438449}
+--- !u!95 &95697503816273636
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463301620885780}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e607f74860c67814e93c914b710142d5, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0e978457b4584044fa13545c44dba636, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114425272003090184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -167,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 195374882644496314}
   playerbody: {fileID: 0}
-  roomPos: {x: 23.5, y: 0, z: 23.5}
+  roomPos: {x: 23.5, y: 0, z: 5.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.035
