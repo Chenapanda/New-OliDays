@@ -45,7 +45,7 @@ public class enemy : MonoBehaviour {
     private void Start()
 	{
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
-		playerbody = GetComponent<PlayerMovement>().self;
+		playerbody = GameObject.FindGameObjectWithTag("Player");
 		agent.GetComponent<NavMeshAgent>();
 
 	}
@@ -56,7 +56,7 @@ public class enemy : MonoBehaviour {
         if (shouldchase)
         {
             agent.SetDestination(playertransform.position);
-			OnCollisionEnter(col);
+			/*OnCollisionEnter(col);
                      	        
             /*Vector3 direction = playertransform.position - this.transform.position;
 			direction.y = 0;

@@ -167,10 +167,10 @@
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PowerUp.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
+          <e p="ShopItem.cs" t="Include" />
           <e p="StageGeneration.cs" t="Include" />
           <e p="Weapon.cs" t="Include" />
         </e>
-        <e p="ShopItem.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Scripts" t="Include">
