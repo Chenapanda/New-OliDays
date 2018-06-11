@@ -57,7 +57,7 @@ public class enemy : MonoBehaviour {
 
         if (type == 0)
         {
-            health += StageGeneration.GetComponent<StageGeneration>().difficulty * 10;
+            health += StageGeneration.GetComponent<StageGeneration>().difficulty * 10 ;
         }
         if (type == 1)
         {
@@ -90,6 +90,15 @@ public class enemy : MonoBehaviour {
                 Instantiate(dream, transform.position, new Quaternion(0, 0, 0, 0));
                 Instantiate(dreamA, transform.position + new Vector3(0, .5f, 0), dreamA.transform.rotation);
             }
+            if (type == 0)
+            {
+                playerbody.GetComponent<PlayerMovement>().score += 100;
+            }
+            if (type == 1)
+            {
+                playerbody.GetComponent<PlayerMovement>().score += 2000;
+            }
+
             Destroy(gameObject);
         }
     }

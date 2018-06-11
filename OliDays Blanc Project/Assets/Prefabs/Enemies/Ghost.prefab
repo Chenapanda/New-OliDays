@@ -540,7 +540,7 @@ MonoBehaviour:
   agent: {fileID: 195476821419834400}
   animator: {fileID: 95000238965198704}
   playerbody: {fileID: 0}
-  roomPos: {x: -12.5, y: 0, z: 14.5}
+  roomPos: {x: -12.5, y: 0, z: 23.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.04

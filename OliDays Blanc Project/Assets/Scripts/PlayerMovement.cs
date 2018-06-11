@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private float lastShot = 0;
     public float timeBetweenShots = .35f;
     public bool canBeHit = true;
+    public int score = 0;
+
     public float Health
     {
         get
@@ -103,19 +105,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnGUI()
     {
+        //displays Health
         for (int i = 0; i < Health; i++)
         {
-            Rect posHealth = new Rect(20 + 20 * i, 50, 40, 40);
+            Rect posHealth = new Rect(20 + 20 * i, 20, 40, 40);
             GUI.Label(posHealth, Hp);
         }
-        //displays dreams
+        //displays Dreams
         GUI.contentColor = Color.magenta;
-        GUI.Label(new Rect(20, 20, 100, 20), "Dreams : " + Dreams);
-        //displays dammage
-        Rect posDammage = new Rect(20, 90, 40, 40);
+        GUI.Label(new Rect(20, 90, 100, 20), "Dreams : " + Dreams);
+        //displays Dammage
+        Rect posDammage = new Rect(20, 50, 40, 40);
         GUI.Label(posDammage, Staff);
-        Rect posDammage2 = new Rect(70, 100, 70, 70);
+        Rect posDammage2 = new Rect(70, 60, 70, 70);
         GUI.Label(posDammage2, dammage.ToString());
+        //displays Score
+        GUI.Label(new Rect(20, 110, 100, 20), "Score : " + score);
     }
     
     public void TakeDamage(int amount)

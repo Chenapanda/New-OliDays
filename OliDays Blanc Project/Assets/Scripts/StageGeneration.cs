@@ -20,7 +20,7 @@ public class StageGeneration : MonoBehaviour {
     public int difficulty = 0;
     public bool boss = false;
     public bool powerup = false;
-    private int level = 0;
+    private int level = 1;
     // Use this for initialization
     public void Start()
 {

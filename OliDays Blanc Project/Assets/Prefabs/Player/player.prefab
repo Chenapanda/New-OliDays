@@ -2156,6 +2156,7 @@ MonoBehaviour:
   health: 3
   timeBetweenShots: 1
   canBeHit: 0
+  score: 0
 --- !u!137 &137112140002882460
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
