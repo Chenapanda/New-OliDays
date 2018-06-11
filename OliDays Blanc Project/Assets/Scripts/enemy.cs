@@ -51,23 +51,27 @@ public class enemy : MonoBehaviour {
 	}
 
 	void Update(){
-        bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
-
-        if (shouldchase)
+        if (transform != null)
         {
-            agent.SetDestination(playertransform.position);
-			/*OnCollisionEnter(col);
-                     	        
-            /*Vector3 direction = playertransform.position - this.transform.position;
-			direction.y = 0;
-			
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1);
+            bool shouldchase = ((roomPos.x - 0.5f < playertransform.position.x) && (playertransform.position.x < roomPos.x + 8f)) && ((roomPos.z - 0.5f < playertransform.position.z) && (playertransform.position.z < roomPos.z + 8f));
+            if (shouldchase)
+            {
+                agent.SetDestination(playertransform.position);
+                /*OnCollisionEnter(col);
 
-			if (direction.magnitude > 0.75f)
-			{
-				this.transform.Translate(0,0,speed);
-			}*/
+                /*Vector3 direction = playertransform.position - this.transform.position;
+                direction.y = 0;
+
+                this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 1);
+
+                if (direction.magnitude > 0.75f)
+                {
+                    this.transform.Translate(0,0,speed);
+                }*/
+            }
         }
+
+
 		
 	}
 	
