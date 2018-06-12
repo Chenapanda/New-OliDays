@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         {
             player.velocity = new Vector3(player.velocity.x, player.velocity.y, -maxSpeed);
         }
-        /*
+        
         if (player.velocity.x < minSpeed && player.velocity.x > -minSpeed && (player.velocity.x > startmove || player.velocity.x < -startmove))
         {
             if (player.velocity.x == 0)
@@ -137,9 +137,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 player.velocity = new Vector3(player.velocity.x, player.velocity.y, minSpeed);
             }
-        }*/
+        }
     }
-
+    /*
     private void OnGUI()
     {
         //displays Health
@@ -159,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         //displays Score
         GUI.Label(new Rect(20, 110, 100, 20), "Score : " + score);
     }
-    
+    */
     public void TakeDamage(int amount)
     {
         bool canBeHit = (lastShot + timeBetweenShots < Time.time);
