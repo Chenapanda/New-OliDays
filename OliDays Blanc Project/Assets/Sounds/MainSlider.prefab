@@ -234,9 +234,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3042982d43e4a5d4daa20426995cc9a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainSlider: {fileID: 114567333551781074}
   MenuSlider: {fileID: 114573188313153598, guid: 0d0d52567dcb53f4ab1ad6932a09ab48,
     type: 2}
+  AudioSource: {fileID: 0}
 --- !u!114 &114181721671740680
 MonoBehaviour:
   m_ObjectHideFlags: 1

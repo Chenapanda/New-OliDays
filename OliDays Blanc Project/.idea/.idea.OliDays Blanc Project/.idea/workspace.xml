@@ -11,35 +11,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="enemy.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="enemy.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/enemy.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3276">
-              <caret line="157" column="12" lean-forward="false" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="12" />
+            <state relative-caret-position="623">
+              <caret line="147" column="10" lean-forward="false" selection-start-line="147" selection-start-column="10" selection-end-line="147" selection-end-column="10" />
               <folding>
-                <marker date="1528823645695" expanded="true" signature="6:197" ph="..." />
-                <marker date="1528823645695" expanded="true" signature="235:4160" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1198:1329" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1216:1263" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1275:1323" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1355:1936" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1622:1668" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1692:1800" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1823:1930" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1953:2441" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="1985:2435" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="2273:2425" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="2478:3203" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="2622:3197" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="2677:2898" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="2925:3025" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="3052:3153" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="3207:3501" ph="/* public void PerformAttack() ... */" />
-                <marker date="1528823645695" expanded="true" signature="3537:3715" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="3763:4158" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="3830:4042" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="3854:3890" ph="{...}" />
-                <marker date="1528823645695" expanded="true" signature="3899:3945" ph="{...}" />
+                <marker date="1528832839865" expanded="false" signature="6:197" ph="..." />
+                <marker date="1528832839865" expanded="true" signature="235:4160" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1198:1329" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1216:1263" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1275:1323" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1355:1936" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1622:1668" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1692:1800" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1823:1930" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1953:2441" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="1985:2435" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="2273:2425" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="2478:3203" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="2622:3197" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="2677:2898" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="2925:3025" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="3052:3153" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="3207:3501" ph="/* public void PerformAttack() ... */" />
+                <marker date="1528832839865" expanded="true" signature="3537:3715" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="3763:4158" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="3830:4042" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="3854:3890" ph="{...}" />
+                <marker date="1528832839865" expanded="true" signature="3899:3945" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -150,25 +150,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BackgroundSound.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/BackgroundSound.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-              <folding>
-                <marker date="1528829483373" expanded="true" signature="6:119" ph="..." />
-                <marker date="1528829483373" expanded="true" signature="165:745" ph="{...}" />
-                <marker date="1528829483373" expanded="true" signature="275:282" ph="{...}" />
-                <marker date="1528829483373" expanded="true" signature="375:408" ph="{...}" />
-                <marker date="1528829483373" expanded="true" signature="431:644" ph="{...}" />
-                <marker date="1528829483373" expanded="true" signature="478:526" ph="{...}" />
-                <marker date="1528829483373" expanded="true" signature="533:561" ph="{...}" />
-                <marker date="1528829483373" expanded="true" signature="696:743" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PauseMenu.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -233,7 +214,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Fog-of-war-master/Assets/Editor/EditorButton.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$USER_HOME$/Desktop/Fog-of-war-master/Assets/Editor/FieldOfViewEditor.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/BackgroundSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/amusedART/StoneMonster/Script/Animation_Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Rooms/Room.cs" root0="FORCE_HIGHLIGHTING" />
@@ -281,9 +261,9 @@
         <option value="$PROJECT_DIR$/Assets/torch/scripts/Torchelight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/BackgroundSound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enemy.cs" />
       </list>
     </option>
   </component>
@@ -374,12 +354,12 @@
       <workItem from="1528380145437" duration="206000" />
       <workItem from="1528389092999" duration="13361000" />
       <workItem from="1528647271155" duration="1816000" />
-      <workItem from="1528823986108" duration="2518000" />
+      <workItem from="1528823986108" duration="3569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64841000" />
+    <option name="totallyTimeSpent" value="65892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -714,38 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/enemy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3276">
-          <caret line="157" column="12" lean-forward="false" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="12" />
-          <folding>
-            <marker date="1528823645695" expanded="true" signature="6:197" ph="..." />
-            <marker date="1528823645695" expanded="true" signature="235:4160" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1198:1329" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1216:1263" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1275:1323" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1355:1936" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1622:1668" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1692:1800" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1823:1930" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1953:2441" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="1985:2435" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="2273:2425" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="2478:3203" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="2622:3197" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="2677:2898" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="2925:3025" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="3052:3153" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="3207:3501" ph="/* public void PerformAttack() ... */" />
-            <marker date="1528823645695" expanded="true" signature="3537:3715" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="3763:4158" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="3830:4042" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="3854:3890" ph="{...}" />
-            <marker date="1528823645695" expanded="true" signature="3899:3945" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2467">
@@ -806,15 +754,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/enemy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="147" column="10" lean-forward="false" selection-start-line="147" selection-start-column="10" selection-end-line="147" selection-end-column="10" />
           <folding>
-            <marker date="1528829483373" expanded="true" signature="6:119" ph="..." />
-            <marker date="1528829483373" expanded="true" signature="165:745" ph="{...}" />
-            <marker date="1528829483373" expanded="true" signature="275:282" ph="{...}" />
-            <marker date="1528829483373" expanded="true" signature="375:408" ph="{...}" />
-            <marker date="1528829483373" expanded="true" signature="431:644" ph="{...}" />
-            <marker date="1528829483373" expanded="true" signature="478:526" ph="{...}" />
-            <marker date="1528829483373" expanded="true" signature="533:561" ph="{...}" />
-            <marker date="1528829483373" expanded="true" signature="696:743" ph="{...}" />
+            <marker date="1528832839865" expanded="false" signature="6:197" ph="..." />
+            <marker date="1528832839865" expanded="true" signature="235:4160" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1198:1329" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1216:1263" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1275:1323" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1355:1936" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1622:1668" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1692:1800" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1823:1930" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1953:2441" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="1985:2435" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="2273:2425" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="2478:3203" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="2622:3197" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="2677:2898" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="2925:3025" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="3052:3153" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="3207:3501" ph="/* public void PerformAttack() ... */" />
+            <marker date="1528832839865" expanded="true" signature="3537:3715" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="3763:4158" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="3830:4042" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="3854:3890" ph="{...}" />
+            <marker date="1528832839865" expanded="true" signature="3899:3945" ph="{...}" />
           </folding>
         </state>
       </provider>
