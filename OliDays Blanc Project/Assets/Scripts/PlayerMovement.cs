@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Experimental.Audio.Google;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {

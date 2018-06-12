@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 54863582589066978}
   - component: {fileID: 114425272003090184}
   - component: {fileID: 195374882644496314}
+  - component: {fileID: 82977545990154270}
   m_Layer: 11
   m_Name: Slime
   m_TagString: enemy
@@ -625,6 +626,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.50670946, y: 0.38359573, z: 0.50898844}
   m_Center: {x: -0.009399366, y: 0.17510389, z: -0.01438449}
+--- !u!82 &82977545990154270
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463301620885780}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1569373cb0bb8c540b3b5970337500c1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0.9430795
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95707051291226078
 Animator:
   serializedVersion: 3
@@ -670,10 +751,10 @@ MonoBehaviour:
   DAMAGE: Anim_Damage
   DEATH: Anim_Death
   anim: {fileID: 0}
-  AttackSound: {fileID: 0}
+  AudioSource: {fileID: 82977545990154270}
   animator: {fileID: 95707051291226078}
   playerbody: {fileID: 0}
-  roomPos: {x: -3.5, y: 0, z: 14.5}
+  roomPos: {x: -12.5, y: 0, z: 23.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.035

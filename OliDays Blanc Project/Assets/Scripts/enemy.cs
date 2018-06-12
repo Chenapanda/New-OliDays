@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-using UnityEditor.Animations;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Advertisements;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
@@ -23,6 +20,7 @@ public class enemy : MonoBehaviour {
 	public string DEATH	= "Anim_Death";
 
 	public Animation anim;
+	public AudioSource AudioSource;
 
 
 	public Animator animator;
@@ -60,6 +58,10 @@ public class enemy : MonoBehaviour {
 		playertransform = GameObject.FindGameObjectWithTag("Player").transform;
 		playerbody = GameObject.FindGameObjectWithTag("Player");
 		agent.GetComponent<NavMeshAgent>();
+		if (AudioSource != null)
+		{
+			AudioSource.GetComponent<AudioSource>();
+		}
 		if (animator != null)
 		{
 			animator.GetComponent<Animator>();
@@ -83,8 +85,11 @@ public class enemy : MonoBehaviour {
             if (shouldchase && !isAttacking)
             {
             	agent.SetDestination(playertransform.position);
-	            anim.Play(IDLE);
-	        	animator.Play("Move");
+	            if (anim != null && animator != null)
+	            {
+		            anim.Play(IDLE);
+		            animator.Play("Move");
+	            }
             }
         }
     }
@@ -148,11 +153,18 @@ public class enemy : MonoBehaviour {
 		 {
 			 if (type == 1)
 			 {
-				 anim.Play(ATTACK);
+				 if (anim != null)
+				 {
+					 anim.Play(ATTACK);
+				 }
 			 }
 			 else
 			 {
-				 animator.Play("Attack", -1);
+				 if (animator != null)
+				 {
+					 animator.Play("Attack", -1);
+					 AudioSource.Play();
+				 }
 			 }
 			Debug.Log("Damages dealt");
 			playerbody.GetComponent<PlayerMovement>().TakeDamage(1);
