@@ -14,7 +14,23 @@ public class DreamsUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        myText.text = player.GetComponent<PlayerMovement>().Dreams.ToString()[dividor].ToString();
+        if (dividor == 0)
+        {
+            myText.text = player.GetComponent<PlayerMovement>().Dreams.ToString()[dividor].ToString();
+        }
+        else
+        {
+            if (player.GetComponent<PlayerMovement>().Dreams < 10)
+            {
+                myText.text = "";
+            }
+            else
+            {
+                myText.text = player.GetComponent<PlayerMovement>().Dreams.ToString()[dividor].ToString();
+
+            }
+        }
+
 
     }
 }
