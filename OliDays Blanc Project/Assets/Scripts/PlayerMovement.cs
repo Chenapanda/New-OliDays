@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody player;
     public int speed;
     public float maxSpeed;
+    public float minSpeed;
+    public float startmove = 0.1f;
     public Texture2D Staff;
     public Texture2D Hp;
     public float health = 3f;
@@ -19,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     public bool canBeHit = true;
     public int score = 0;
 
+    private void Start()
+    {
+        minSpeed = speed;
+    }
     public float Health
     {
         get
@@ -57,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         Move();
     }
@@ -101,6 +107,37 @@ public class PlayerMovement : MonoBehaviour
         {
             player.velocity = new Vector3(player.velocity.x, player.velocity.y, -maxSpeed);
         }
+        /*
+        if (player.velocity.x < minSpeed && player.velocity.x > -minSpeed && (player.velocity.x > startmove || player.velocity.x < -startmove))
+        {
+            if (player.velocity.x == 0)
+            {
+                player.velocity = new Vector3(0, player.velocity.y, player.velocity.z);
+            }
+            if (player.velocity.x < 0)
+            {
+                player.velocity = new Vector3(-minSpeed, player.velocity.y, player.velocity.z);
+            }
+            if (player.velocity.x > 0)
+            {
+                player.velocity = new Vector3(minSpeed, player.velocity.y, player.velocity.z);
+            }
+        }
+        if (player.velocity.z < minSpeed && player.velocity.z > -minSpeed && (player.velocity.z > startmove || player.velocity.z < -startmove))
+        {
+            if (player.velocity.z == 0)
+            {
+                player.velocity = new Vector3(player.velocity.x, player.velocity.y, 0);
+            }
+            if (player.velocity.z < 0)
+            {
+                player.velocity = new Vector3(player.velocity.x, player.velocity.y, -minSpeed);
+            }
+            if (player.velocity.z > 0)
+            {
+                player.velocity = new Vector3(player.velocity.x, player.velocity.y, minSpeed);
+            }
+        }*/
     }
 
     private void OnGUI()

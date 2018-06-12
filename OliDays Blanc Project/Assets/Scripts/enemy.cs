@@ -93,6 +93,7 @@ public class enemy : MonoBehaviour {
     public void ishit(float dmg)
     {
         Health -= dmg;
+        playerbody.GetComponent<PlayerMovement>().score += 5;
         ShowFloatingText();
         if (Health <= 0)
         {
