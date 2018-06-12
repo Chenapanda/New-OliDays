@@ -168,6 +168,7 @@ public class enemy : MonoBehaviour {
 				 if (anim != null)
 				 {
 					 anim.Play(ATTACK);
+					 AudioSource.Play();
 				 }
 			 }
 			 else
