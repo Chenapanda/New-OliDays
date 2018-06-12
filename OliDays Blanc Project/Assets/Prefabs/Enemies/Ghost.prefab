@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 54361331184777564}
   - component: {fileID: 114096604822439450}
   - component: {fileID: 195476821419834400}
-  - component: {fileID: 95895583903984570}
   m_Layer: 11
   m_Name: Ghost
   m_TagString: enemy
@@ -498,23 +497,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95895583903984570
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892212088774462}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5e1e1cc174c20f54094c01576108b0f4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114096604822439450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -545,7 +527,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   animator: {fileID: 95000238965198704}
   playerbody: {fileID: 0}
-  roomPos: {x: 5.5, y: 0, z: 23.5}
+  roomPos: {x: -3.5, y: 0, z: 14.5}
   range: 4
   playertransform: {fileID: 0}
   speed: 0.04
