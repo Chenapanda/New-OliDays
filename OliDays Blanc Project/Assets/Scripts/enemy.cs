@@ -83,8 +83,16 @@ public class enemy : MonoBehaviour {
             if (shouldchase && !isAttacking)
             {
             	agent.SetDestination(playertransform.position);
-	            anim.Play(IDLE);
-	        	animator.Play("Move");
+                if (anim != null)
+                {
+                    anim.Play(IDLE);
+
+                }
+                if (animator != null)
+                {
+                    animator.Play("Move");
+
+                }
             }
         }
     }

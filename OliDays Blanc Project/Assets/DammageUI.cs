@@ -18,6 +18,10 @@ public class DammageUI : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        myText.text = player.GetComponent<PlayerMovement>().Dammage.ToString()[dividor].ToString();
+        if (player.GetComponent<PlayerMovement>().Dammage.ToString().Length > dividor)
+        {
+            myText.text = player.GetComponent<PlayerMovement>().Dammage.ToString()[dividor].ToString();
+
+        }
     }
 }
