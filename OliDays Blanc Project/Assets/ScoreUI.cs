@@ -18,6 +18,10 @@ public class ScoreUI : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        myText.text = player.GetComponent<PlayerMovement>().score.ToString()[dividor].ToString();
+        if (player.GetComponent<PlayerMovement>().score.ToString().Length > dividor)
+        {
+            myText.text = player.GetComponent<PlayerMovement>().score.ToString()[dividor].ToString();
+
+        }
     }
 }
