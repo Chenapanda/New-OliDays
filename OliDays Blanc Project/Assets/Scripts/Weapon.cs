@@ -9,9 +9,15 @@ public class Weapon : MonoBehaviour {
     public GameObject player;
     float lastShot = 0, timeBetweenShots = .35f;
     public GameObject bulletPrefab;
+
+    public AudioSource AudioSource;
     // Use this for initialization
     void Start () {
         GetMouseInput();
+        if (AudioSource != null)
+        {
+            AudioSource.GetComponent<AudioSource>();
+        }
     }
 	
 	// Update is called once per frame
@@ -48,6 +54,7 @@ public class Weapon : MonoBehaviour {
             Vector3 direction = new Vector3(mouseVector.x, 0, mouseVector.z);
             bul.Setup(direction); //give the bullet a direction to fly
             lastShot = Time.time; //used to check next time this is called
+            AudioSource.Play();
         }
     }
 }

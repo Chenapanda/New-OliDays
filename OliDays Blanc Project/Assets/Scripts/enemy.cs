@@ -62,6 +62,7 @@ public class enemy : MonoBehaviour {
 		{
 			AudioSource.GetComponent<AudioSource>();
 		}
+
 		if (animator != null)
 		{
 			animator.GetComponent<Animator>();
