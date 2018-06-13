@@ -10,6 +10,7 @@ TagManager:
   - sphere
   - Script
   - Stage
+  - HUD
   layers:
   - Default
   - TransparentFX
