@@ -680,45 +680,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.34
       objectReference: {fileID: 0}
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4424538096771602, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+    - target: {fileID: 4998384542998066, guid: f4a6b26603b893a4692d60406a973312, type: 2}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 82269781011979166, guid: 08830972830c48b488cdf29e58091b2d,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4b449878260ea4b46a786bf3258777ca, type: 3}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 08830972830c48b488cdf29e58091b2d, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: f4a6b26603b893a4692d60406a973312, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &163674798
 GameObject:
@@ -8044,17 +8039,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1500967429
@@ -12995,7 +12979,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0.375, y: 0, z: 0}
 --- !u!82 &2086351507 stripped
 AudioSource:
-  m_PrefabParentObject: {fileID: 82269781011979166, guid: 08830972830c48b488cdf29e58091b2d,
+  m_PrefabParentObject: {fileID: 82840372061147626, guid: f4a6b26603b893a4692d60406a973312,
     type: 2}
   m_PrefabInternal: {fileID: 128813175}
 --- !u!1 &2086658751

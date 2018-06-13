@@ -168,6 +168,7 @@
           <e p="FloatingText.cs" t="Include" />
           <e p="FrenchToEnglish.cs" t="Include" />
           <e p="GameOver.cs" t="Include" />
+          <e p="GameOverEnglish.cs" t="Include" />
           <e p="GameSettings.cs" t="Include" />
           <e p="HUD.cs" t="Include" />
           <e p="LanguageChange.cs" t="Include" />
