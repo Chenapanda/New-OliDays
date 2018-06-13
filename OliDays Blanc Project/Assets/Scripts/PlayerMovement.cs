@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private float lastShot = 0;
     public float timeBetweenShots = .35f;
     public bool canBeHit = true;
+    public GameObject HUD;
     public int score = 0;
 
     private void Start()
@@ -172,9 +174,9 @@ public class PlayerMovement : MonoBehaviour
     
     private void Die()
     {
-        Debug.Log("Player dead. Reset health.");
+        Destroy(HUD);
         GameOverUI.SetActive(true);
-        Destroy(self);
+        Destroy(gameObject);
     }
 
 }

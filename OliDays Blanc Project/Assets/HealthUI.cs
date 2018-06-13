@@ -26,4 +26,8 @@ public class HealthUI : MonoBehaviour {
             Heart.enabled = false;
         }
     }
+    public void Diee()
+    {
+        Heart.enabled = false;
+    }
 }

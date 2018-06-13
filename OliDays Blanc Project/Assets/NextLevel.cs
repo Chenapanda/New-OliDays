@@ -40,7 +40,7 @@ public class NextLevel : MonoBehaviour {
 
         for (int i = 0; i < GameObjects.Length; i++)
         {
-            if (GameObjects[i].tag != "Player" && GameObjects[i].tag != "MainCamera" && GameObjects[i].tag != "Script" && GameObjects[i].tag != "Stage")
+            if (GameObjects[i].tag != "Player" && GameObjects[i].tag != "MainCamera" && GameObjects[i].tag != "Script" && GameObjects[i].tag != "Stage" && GameObjects[i].tag != "HUD")
             {
                 Destroy(GameObjects[i]);
             }
