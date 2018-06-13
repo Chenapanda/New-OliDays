@@ -68,6 +68,14 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Move()
     {
+        if (Input.GetKey("a"))
+        {
+            health++;
+        }
+        if (Input.GetKey("e"))
+        {
+            health--;
+        }
         if (Input.GetKey("d"))
         {
             player.AddForce(speed * 10, 0, 0);
@@ -138,6 +146,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
     /*
     private void OnGUI()
     {
