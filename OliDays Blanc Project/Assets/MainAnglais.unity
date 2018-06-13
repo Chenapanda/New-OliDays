@@ -5220,6 +5220,7 @@ MonoBehaviour:
   health: 3
   timeBetweenShots: 1
   canBeHit: 0
+  HUD: {fileID: 1148676814}
   score: 0
 --- !u!65 &909869387
 BoxCollider:
